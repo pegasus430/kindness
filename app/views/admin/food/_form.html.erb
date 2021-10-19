@@ -1,0 +1,88 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <h4 class="page-title"><%= title %></h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <%= form_for([:admin, @food], url: url , :html => {class: 'needs-validation', :novalidate => 'novalidate'}) do |f| %>
+          <p class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i>  圖片建議：數量 1，最佳尺寸：955px X 606px
+          </p>
+          <p class="text-muted font-14"> <i class="mdi mdi-flag-variant-outline"></i> 圖片編輯：上傳後請點擊“編輯”，裁切最適畫面。
+          </p>
+          <%= render partial: "admin/images/uploadSingle", :locals => 
+          {
+            url: "/admin/food/#{@food.id}/images",
+            form_name: 'food',
+            col_name: 'image_ids',
+            max_size: 1,
+            :w => 955, :h => 606
+          } 
+        %>
+          <hr>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label><span class="text-danger">*</span> 副標一(中文)</label>
+              <%= f.text_field :title_zh_tw, name: 'food[title_zh_tw]',label: '副標一', class: 'form-control', :required => true, value: @food.title_zh_tw %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 描述(中文)</label>
+            <%= f.cktext_area 'desc_zh_tw', 
+              :class => 'ckeditor',
+              :name => 'food[desc_zh_tw]',
+              :rows => 10,
+              value: @food.desc_zh_tw,
+              :ckeditor => {:toolbar => 'Full', 
+                            :height => '200px',   
+                            :language => 'zh-TW'} %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="grade_name"><span class="text-danger">*</span> 副標一(英文)</label>
+              <%= f.text_field :title_en, name: 'food[title_en]',label: '副標一', class: 'form-control', :required => true, value: @food.title_en  %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 描述(英文)</label>
+            <%= f.cktext_area 'desc_en', 
+            :class => 'ckeditor',
+            :name => 'food[desc_en]',
+            :rows => 10,
+            value: @food.desc_en,
+            :ckeditor => {:toolbar => 'Full', 
+                          :height => '200px',   
+                          :language => 'zh-TW'} %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <ul class="list-inline wizard mb-0">
+            <li class="previous list-inline-item">
+              <%= link_to :back, :class => "btn btn-default" do %>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> 返回
+              <% end %>
+            </li>
+            <li class="next list-inline-item float-right">
+              <%= f.submit "送出", class: "btn btn-primary pull-right" %>
+            </li>
+          </ul>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

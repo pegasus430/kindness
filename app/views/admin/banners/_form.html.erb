@@ -1,0 +1,199 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <h4 class="page-title"><%= title %></h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <%= form_for([:admin, @banner], :html => {class: 'needs-validation', :novalidate => 'novalidate'}) do |f| %>
+          <p class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i> 圖片建議：最佳尺寸：2700px X 1800px。上傳後請點擊“編輯”，裁切最適畫面。
+          </p>          
+          <%= render partial: "admin/images/upload", :locals => 
+          {
+            url: "/admin/banners/#{@banner.id}/images",
+            name: 'banners',
+            :w => 2700, :h => 1800
+          } 
+        %>
+          <hr>
+          <h4>Section1</h4>
+          <p class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i> 圖片數量為 2 ：最佳尺寸：588px X 888px 
+          </p>
+          <%= render partial: "admin/images/uploadSingle", :locals => 
+          {
+            url: "/admin/banners/#{@banner&.id}/section1_images",
+            form_name: 'banners',
+            col_name: 'section1_image_ids',
+            max_size: 2,
+            :w => 588, :h => 888
+          } 
+        %>
+          <h4>Section2</h4>
+          <p class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i> 圖片數量為 1 ：最佳尺寸：1306px X 980px 
+          </p>
+          <%= render partial: "admin/images/uploadSingle", :locals => 
+          {
+            url: "/admin/banners/#{@banner&.id}/section2_images",
+            form_name: 'banners', 
+            col_name: 'section2_image_ids',
+            max_size: 1,
+            :w => 1306, :h => 980
+          } 
+          %>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> 標題(中文)</label>
+              <%= f.text_field :title, name: 'banners[welcome_to_kindness_day_title_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @banner.welcome_to_kindness_day_title_zh_tw %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> 標題(英文)</label>
+              <%= f.text_field :address, name: 'banners[welcome_to_kindness_day_title_en]',label: '名稱', class: 'form-control', :required => true, value: @banner.welcome_to_kindness_day_title_en %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> 副標題(中文)</label>
+              <%= f.text_field :title, name: 'banners[welcome_to_kindness_day_subtitle_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @banner.welcome_to_kindness_day_subtitle_zh_tw %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> 副標題(英文)</label>
+              <%= f.text_field :address, name: 'banners[welcome_to_kindness_day_subtitle_en]',label: '名稱', class: 'form-control', :required => true, value: @banner.welcome_to_kindness_day_subtitle_en %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> 介紹(中文)</label>
+              <%= f.text_area :title, name: 'banners[welcome_to_kindness_day_description_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @banner.welcome_to_kindness_day_description_zh_tw, rows: "8" %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> 介紹(英文)</label>
+              <%= f.text_area :address, name: 'banners[welcome_to_kindness_day_description_en]',label: '名稱', class: 'form-control', :required => true, value: @banner.welcome_to_kindness_day_description_en, rows: "8" %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <h4>Section3</h4>
+          <p class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i> 圖片數量為 1 ：最佳尺寸：816px X 515px 
+          </p>
+          <%= render partial: "admin/images/uploadSingle", :locals => 
+          {
+            url: "/admin/banners/#{@banner&.id}/section3_images",
+            form_name: 'banners',
+            col_name: 'section3_image_ids',
+            max_size: 1,
+            :w => 816, :h => 515
+          } 
+          %>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> 標題(中文)</label>
+              <%= f.text_field :title, name: 'banners[room_title_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @banner.room_title_zh_tw %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> 標題(英文)</label>
+              <%= f.text_field :address, name: 'banners[room_title_en]',label: '名稱', class: 'form-control', :required => true, value: @banner.room_title_en %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> 描述(中文)</label>
+              <%= f.text_area :title, name: 'banners[room_description_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @banner.room_description_zh_tw, rows: "8" %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> 描述(英文)</label>
+              <%= f.text_area :address, name: 'banners[room_description_en]',label: '名稱', class: 'form-control', :required => true, value: @banner.room_description_en, rows: "8" %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <hr>
+          <ul class="list-inline wizard mb-0">
+            <li class="previous list-inline-item">
+              <%= link_to admin_banners_path, :class => "btn btn-default" do %>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> 回清單
+              <% end %>
+            </li>
+            <li class="next list-inline-item float-right">
+              <%= f.submit "送出", class: "btn btn-primary pull-right" %>
+            </li>
+          </ul>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<%= bootstrap_form_for([:admin, @setting], url: admin_setting_path(source: 'banner', banner_id: @banner.id), method: 'PUT' ,inline_errors: true, enctype: "multipart/form-data") do |f| %>
+  <div class="card">
+    <div class="card-body">
+      <div class="box-body">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <%= f.hidden_field :id %>
+            <%= f.text_field :title_zh_tw, label: '首頁標題(中文)' %>
+          </div>
+          <div class="form-group col-md-6">
+            <%= f.text_field :title_en, label: '首頁標題(英文)' %>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <%= f.text_field :aboutus_name_zh_tw, label: '關於康橋(中文)' %>
+          </div>
+          <div class="form-group col-md-6">
+            <%= f.text_field :aboutus_name_en, label: '關於康橋(英文)' %>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <%= f.text_area :aboutus_description_zh_tw, label: '康橋介紹(中文)', rows: "6" %>
+          </div>
+          <div class="form-group col-md-6">
+            <%= f.text_area :aboutus_description_en, label: '康橋介紹(英文)', rows: "6" %>
+          </div>
+        </div>
+      </div>
+      <div class="box-footer">
+        <ul class="list-inline wizard mb-0">
+          <li class="next list-inline-item float-right">
+            <%= f.submit "更新首頁設定", class: "btn btn-primary pull-right" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

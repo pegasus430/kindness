@@ -1,0 +1,1 @@
+describe("replace (method)",()=>{it("should replace the image url with a new one",e=>{const c=window.createImage(),r="/base/docs/images/picture-2.jpg",t=new Cropper(c,{ready(){t.options.ready=(()=>{expect(c.src).to.include(r),e()}),expect(c.src).to.not.include(r),t.replace(r)}})})});

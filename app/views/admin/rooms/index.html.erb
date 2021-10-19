@@ -1,0 +1,98 @@
+  <% content_for :page_javascript do %>
+  <script>
+    $(function(){
+      var table = $('.rows').get(0);
+    
+    
+      var sortable = Sortable.create(table,{
+          animation: 200,
+          draggable: ".item",
+          handle: ".drop",
+      });
+    
+    
+      $('.roomSeq').on('click', function(){
+    
+        $.get("/admin/stores/<%= @store.id%>/rooms/set_seq?" + $('#seqForm').serialize(), function() {
+          alert('save !')
+        });
+    
+        return false;
+      })
+    })
+  </script>
+<% end %>
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <% if current_user.admin? %>
+            <li class="breadcrumb-item">
+              <%=link_to "分館列表", admin_stores_path %>
+            </li>
+          <% end %>
+          <li class="breadcrumb-item active">
+            <%= @store.title %>
+          </li>
+        </ol>
+      </div>
+      <h4 class="page-title">Room</h4>
+    </div>
+  </div>
+</div>
+<div class="row table">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="col-12">
+          <div class="page-title-box">
+            <div class="page-title-right">
+              <%= link_to new_admin_store_room_path(@store), :class => "btn btn-sm btn-primary btn-outline-secondary" do %>
+                <i class="fa fa-plus" aria-hidden="true"></i> 新增房型
+              <% end %>
+              <button class="btn btn-primary roomSeq"> 存檔排序 </button>
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive-sm">
+          <form id="seqForm" name="seqForm">
+            <table class="table table-centered mb-0">
+              <thead>
+                <td>cover</td>
+                <th> 名稱 </th>
+                <th></th>
+              </thead>
+              <tbody class="rows">
+                <% @rooms.each_with_index do |room, index| %>
+                  <tr class="item">
+                    <td class="drop">
+                      <span clss="btn btn-outline-dark btn-rounded">
+                        <i class="mdi mdi-swap-vertical"></i>
+                      </span>
+                      <%=image_tag room.main_image(type: :thumb) %>
+                      <input type="hidden" value="<%= room.id %>" name="seq[]">
+                    </td>
+                    <td>
+                      <%= room.title_zh_tw %> | <%= room.title_en %>
+                    </td>
+                    <td class="table-action">
+                      <%= link_to "修改", edit_admin_store_room_path(@store, room), class: "mdi mdi-pencil" %> | 
+                      <%= link_to "刪除", admin_store_room_path(@store, room),  class: "mdi mdi-delete", method: :delete,  data: { confirm: "你確定要刪除嗎?" }   %>
+                    </td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </form>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-md-7">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

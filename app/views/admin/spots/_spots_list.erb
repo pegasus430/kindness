@@ -1,0 +1,35 @@
+<form id="seqForm" name="seqForm">
+  <table class="table table-centered mb-0">
+    <thead>
+      <td>cover</td>
+      <td>公告日期</td>
+      <td>種類</td>
+      <td>景點名稱</td>
+      <td></td>
+    </thead>
+    <tbody class="rows">
+      <% spots.each_with_index do |spot, index| %>
+        <tr class="item">
+          <td>
+            <%=image_tag spot.cover(type: :thumb) %>
+          </td>
+          <td>
+            <%= spot.created_at.strftime("%Y-%m-%d") %>
+          </td>
+          <td>
+            <%= spot.tags.include?('hotspot') ? '找景點, ' : '' %>  
+            <%= spot.tags.include?('shopping') ? '找商圈' : '' %> 
+          </td>
+          <td>
+            中文: <%= spot.title_zh_tw %><br/>
+            英文: <%= spot.title_en %>
+          </td>      
+          <td class="table-action">
+            <%= link_to "修改", edit_admin_store_spot_path(@store, spot), class: "mdi mdi-pencil" %> | 
+            <%= link_to "刪除", admin_store_spot_path(@store, spot),  class: "mdi mdi-delete", method: :delete,  data: { confirm: "你確定要刪除嗎?" }   %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</form>

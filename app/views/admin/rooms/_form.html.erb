@@ -1,0 +1,202 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <% if current_user.admin? %>
+            <li class="breadcrumb-item">
+              <%=link_to "分館列表", admin_stores_path %>
+            </li>
+          <% end %>
+          <li class="breadcrumb-item">
+            <%= link_to @store.title, admin_store_rooms_path(@store) %>
+          </li>
+          <li class="breadcrumb-item active">
+            <%= @room.title  %>
+          </li>
+        </ol>
+      </div>
+      <h4 class="page-title"><%= title %></h4>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <%= form_for([:admin, @store, @room], :html => {class: 'needs-validation', :novalidate => 'novalidate'}) do |f| %>
+      <div id="app">
+        <li class="next list-inline-item float-right">
+          <!-- 前台連結 -->
+          <% if !@room.new_record?%>
+            <a href="<%=reserv_room_path(@room)%>" class="btn btn-info pull-right" target="_blank">前台檢視</a>
+          <% end %>
+        </li>
+        <h3>外頁圖片</h3>
+        <p class="text-muted font-14">
+          <i class="mdi mdi-flag-variant-outline"></i> 圖片建議：數量 1，最佳尺寸：1110px X 620px。上傳後請點擊“編輯”，裁切最適畫面。
+        </p>
+        
+        <%= render partial: "admin/images/uploadSingle", :locals => 
+          {
+            url: "/admin/stores/#{@store.id}/rooms/#{@room&.id.to_s }/cover_images",
+            form_name: 'room',
+            col_name: 'cover_image_ids',
+            max_size: 1,
+            :w => 1110, :h => 620 
+          } 
+        %>
+        <h3>內頁圖片</h3>
+        <p class="text-muted font-14">
+          <i class="mdi mdi-flag-variant-outline"></i> 圖片建議：最大數量 13。最佳顯示圖數量為 4、7、10、13張圖片。最佳尺寸：1632px X 966px。上傳後請點擊“編輯”，裁切最適畫面。
+        </p>
+        <!-- 簡化上傳圖片 zzzzzzz -->
+        <%= render partial: "admin/images/uploadSingle", :locals => 
+          {
+              :url => "/admin/stores/#{@store.id}/rooms/#{@room&.id.to_s }/images", 
+              form_name: 'room',
+              col_name: 'image_ids',
+              max_size: 13,
+              :w => 1632, :h => 966
+          } %>
+        <hr>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label class="col-md-4 col-form-label"> <span class="text-danger">*</span>Room 名稱(中文)</label>
+            <div class="col-md-12">
+              <%= f.text_field :title, name: 'room[title_zh_tw]', label: '名稱', class: 'form-control', :required => true, value: @room.title_zh_tw   %>
+              <%= f.hidden_field :seq %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="col-md-4 col-form-label">  <span class="text-danger">*</span>Room 名稱(英文)</label>
+            <div class="col-md-12">
+              <%= f.text_field :title, name: 'room[title_en]', label: '名稱', class: 'form-control', :required => true, value: @room.title_en %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <label class="col-md-4 col-form-label"> 描述(中文)</label>
+          <div class="col-md-8">
+            <%= f.cktext_area 'desc_zh_tw', 
+                      :class => 'ckeditor',
+                      :name => 'room[desc_zh_tw]',
+                      :rows => 10,
+                      value: @room.desc_zh_tw,
+                      :ckeditor => {:toolbar => 'Full', 
+                                       :height => '500px',   
+                                    :language => 'zh-TW'} %>
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <label class="col-md-4 col-form-label"> 描述(英文)</label>
+          <div class="col-md-8">
+            <%= f.cktext_area 'desc_en', 
+                      :class => 'ckeditor',
+                      :name => 'room[desc_en]',
+                      :rows => 10,
+                      value: @room.desc_en,
+                      :ckeditor => {:toolbar => 'Full', 
+                                    :height => '500px',   
+                                    :language => 'zh-TW'} %>
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <label class="col-md-4 col-form-label"> 房型規格說明(中文)</label>
+          <div class="col-md-8">
+            <%= f.cktext_area 'spec_zh_tw', 
+                      :class => 'ckeditor',
+                      :name => 'room[spec_zh_tw]',
+                      :rows => 10,
+                      value: @room.spec_zh_tw,
+                      :ckeditor => {:toolbar => 'Full', 
+                                    :height => '150px',   
+                                    :language => 'zh-TW'} %>
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <label class="col-md-4 col-form-label"> 房型規格說明(英文)</label>
+          <div class="col-md-8">
+            <%= f.cktext_area 'spec_en', 
+                      :class => 'ckeditor',
+                      :name => 'room[spec_en]',
+                      :rows => 10,
+                      value: @room.spec_en,
+                      :ckeditor => {:toolbar => 'Full', 
+                                    :height => '150px',   
+                                    :language => 'zh-TW'} %>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label class="col-md-4 col-form-label"> 設備及用品左(中文)</label>
+            <div class="col-md-11">
+              <select multiple="true" name="room[equipment_left_zh_tw][]"class="form-control tags">
+                <% @room.equipment_left_zh_tw.each_with_index do |val, index| %>
+                  <option value="<%=val%>" selected="selected"><%=val%></option>
+                <% end %>
+                <!-- if tags are loaded over AJAX, no need for <option> elments -->
+              </select>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="col-md-4 col-form-label"> 設備及用品右(中文)</label>
+            <div class="col-md-11">
+              <select multiple="true" name="room[equipment_right_zh_tw][]"class="form-control tags">
+                <% @room.equipment_right_zh_tw.each_with_index do |val, index| %>
+                  <option value="<%=val%>" selected="selected"><%=val%></option>
+                <% end %>
+                <!-- if tags are loaded over AJAX, no need for <option> elments -->
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label class="col-md-4 col-form-label"> 設備及用品左(英文)</label>
+            <div class="col-md-11">
+              <select multiple="true" name="room[equipment_left_en][]"class="form-control tags">
+                <% @room.equipment_left_en.each_with_index do |val, index| %>
+                  <option value="<%=val%>" selected="selected"><%=val%></option>
+                <% end %>
+                <!-- if tags are loaded over AJAX, no need for <option> elments -->
+              </select>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="col-md-4 col-form-label"> 設備及用品右(英文)</label>
+            <div class="col-md-11">
+              <select multiple="true" name="room[equipment_right_en][]"class="form-control tags">
+                <% @room.equipment_right_en.each_with_index do |val, index| %>
+                  <option value="<%=val%>" selected="selected"><%=val%></option>
+                <% end %>
+                <!-- if tags are loaded over AJAX, no need for <option> elments -->
+              </select>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <ul class="list-inline wizard mb-0">
+          <li class="previous list-inline-item">
+            <%= link_to admin_store_rooms_path(@store), :class => "btn btn-default" do %>
+              <i class="fa fa-arrow-left" aria-hidden="true"></i> 返回
+            <% end %>
+          </li>
+          <li class="next list-inline-item float-right">
+            <%= f.submit "送出", class: "btn btn-primary pull-right" %>
+          </li>
+        </ul>
+      <% end %>
+    </div>
+    <% content_for :page_javascript do %>
+      <script>
+        $(function(){
+            $('.tags').select2({tags: true,});
+        })
+      </script>
+    <% end %>
+  </div>

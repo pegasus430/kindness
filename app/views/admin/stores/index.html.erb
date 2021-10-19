@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+      </div>
+      <h4 class="page-title">分館管理</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="col-12">
+          <div class="page-title-box">
+            <div class="page-title-right">
+              <%= link_to new_admin_store_path, :class => "btn btn-sm btn-primary btn-outline-secondary" do %>
+                <i class="fa fa-plus" aria-hidden="true"></i> 新增分館
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive-sm">
+          <form id="seqForm" name="seqForm">
+            <table class="table table-centered mb-0">
+              <thead>
+                <td></td>
+                <td>分館名稱</td>
+                <td>分館地區</td>
+                <td>分館地址</td>
+                <td></td>
+              </thead>
+              <tbody class="rows">
+                <% @stores.each_with_index do |store, index| %>
+                  <tr class="item">
+                    <td>
+                      <%= link_to "房型管理", admin_store_rooms_path(store) %> | 
+                      <%= link_to "交通資訊", admin_store_traffic_index_path(store)%> | 
+                      <%= link_to "週邊景點", admin_store_spots_path(store)%>
+                    </td>  
+                    <td>
+                      中文: <%= store.title_zh_tw %><br/>
+                      英文: <%= store.title_en %>
+                    </td>
+                    <td><%= store.region.title %></td>     
+                    <td>
+                      中文: <%= store.address_zh_tw %><br/>
+                      英文: <%= store.address_en %>
+                    </td>  
+                    <td class="table-action">
+                      <%= link_to "修改", edit_admin_store_path(store), class: "mdi mdi-pencil" %> |
+                      <%= link_to "刪除", admin_store_path(store),  class: "mdi mdi-delete", method: :delete,  data: { confirm: "你確定要刪除嗎?" }   %>
+                    </td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </form>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-md-7">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

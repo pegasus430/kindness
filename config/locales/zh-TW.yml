@@ -1,0 +1,81 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-TW:
+  hello: "Hello world"
+  about_us: "認識我們" 
+  reservation: "訂房Go!" 
+  food_and_beverages: "餐飲料理"
+  facility: "服務設施"
+  branch: "旅館分佈"
+  news: 
+    title: "News"
+  back_news: "回新聞列表"
+  previous: "上一則"
+  next: "下一則"
+  back_reserv: "回分館列表"
+  back_store: "回分館列表"
+  back_room: "回房型列表"
+  menu:
+    about_us: "認識我們" 
+    reservation: "訂房Go!" 
+    food_and_beverages: "餐飲料理"
+    facility: "服務設施"
+    traffic : "交通資訊"
+    news: "最新消息"
+  reservations:
+    title: 'Rooms!'
+    accommodation_information: "住宿須知"
+    credit_card_service: "現場提供刷卡服務"
+  footer:
+    recruit: "人才募集"
+  landing:
+    news: "News"
+    rooms: 
+      title: "Rooms!"
+      goods_facilities: "設備及用品"
+      description: "我們重視旅客的住宿過程，致力於每個細節，提供乾淨的房間、整潔的用餐還境、每問的餐飲。"
+    welcome_to_kindness_day:
+      title: |
+        歡迎
+        Kindness Day!
+      subtitle: "生活快節奏 旅行慢步調"
+      description: "總是忙於眼晴工作的你，有多久沒有靜下來？當你為生活努力、為目標前進，是時候停下來，把時間留給自己，選擇康橋漫旅，安排一趟愉快的旅行吧。"
+  traffics:
+    title: "Traffic"
+    how_to_arrive: "如何抵達" 
+    tourist_attraction: "周邊找好玩"
+    hot_spot: "找景點散散步"
+    shopping_district: "找商圈逛逛街"   
+    tel: "電話"
+    service_hours: "營業時間"
+
+

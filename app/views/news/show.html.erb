@@ -1,0 +1,61 @@
+<% content_for :page_javascript do %>
+  <%= javascript_include_tag 'designer/black' %>
+  <%= javascript_include_tag 'designer/news-slide' %>
+  <script type="text/javascript">
+    $(function(){
+    
+      $('body').css('background-color', '#111');
+    
+    });
+  </script>>
+<% end %>
+<!--slider-->
+<section class="inside-page-banner blackbg">
+  <div class="light_Banner_container_table inside-banner">
+    <div class="light_Banner_container_table_cell">
+      <h2>News</h2>
+    </div>
+  </div>
+</section>
+<!--content-->
+<section class="news-content container">
+  <div class="news-banner slider">
+    <% @n.images.each_with_index do |img, index| %>
+      <div><img src="<%= img.src.url(:crop) %>" alt=""></div>
+    <% end %>
+  </div>
+  <div class="news-counter"></div>
+</section>
+<section class="blackbg">
+  <div class="container news-detail-txt">
+    <div class="news-txt-left">
+      <h4><%= @n.title %></h4>
+      <p><%= @n.public_date&.strftime("%Y.%m.%d")%></p>
+    </div>
+    <div class="news-txt-right">
+      <%= @n.description.html_safe %>
+    </div>
+  </div>
+  <!--contentainer-->
+  <div class="container news-detail-btn">
+    <div class="news-btn-left">
+      <div class="btn-2"><a href="<%= news_index_path %>"><%= t('back_news')%></a></div>
+    </div>
+    <div class="news-btn-right">
+      <% if @n.prev.present?%>
+        <div class="btn-2 news-btn">
+          <a href="<%= news_path(@n.prev)%>">
+            <%= t('previous')%><span class="arrow-pre"></span>
+          </a>
+        </div>
+      <% end %>
+      <% if @n.next.present?%>
+        <div class="btn-2 news-btn">
+          <a href="<%= news_path(@n.next)%>">
+            <%= t('next')%><span class="arrow-next"></span>
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

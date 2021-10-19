@@ -1,0 +1,206 @@
+<div id="upload">
+  <div class="row">
+    <div class="col-md-4">
+      <label class="btn btn-primary btn-block">
+        請選擇上傳的檔案 &hellip;
+        <input type="file" style="display: none;" type="file" multiple 
+                        @change="uploadImage">
+      </label>
+    </div>
+  </div>
+  <br />
+  <div class="row" id="items">
+    <div v-for="(row, index) in files" class="col-md-4 draggable">
+      <div class="loading-container" v-show="row.loadding">
+        <div class="loading"></div>
+        <div id="loading-text">Loading</div>
+      </div>
+      <div class="thumbnail" v-show="!row.loadding">
+        <div class="caption">
+          <p>
+            <button type="button" class="btn btn-primary" rel="tooltip" title="Zoom" data-toggle="modal" data-target="#myModal" @click=onClickEdit(row)>
+              <span class="glyphicon glyphicon-pencil"></span> 編輯
+            </button>
+            <button type="button" class="btn btn-danger" title="Download now" @click=onClickRemove(row)>
+              <span class="glyphicon glyphicon-remove"></span> 刪除
+            </button>
+          </p>
+          <h3>拖拉圖片可調整順序 </h3>
+        </div>
+        <img class="img-responsive" :src="row.src.crop.url + '?t=' + Math.floor(Math.random() * 100)">
+        <!-- product_attachment_ids -->
+        <input type="hidden" name='<%= "#{name}[image_ids][]" %>' :value="row.id">
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myModal" id="myModal">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">修改圖片</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="img-container">
+            <img class="img-responsive cropper" :src="file.src.url">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary" @click=updateImage() data-dismiss="modal">
+            <i class="fa fa-scissors" aria-hidden="true"></i> 存檔
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type='text/javascript'>
+  $(document).on({
+      mouseenter: function() {
+          $(this).find('.caption').slideDown(250); //.fadeIn(250)
+      },
+      mouseleave: function() {
+          $(this).find('.caption').slideUp(250); //.fadeOut(205)
+  
+      }
+  }, ".thumbnail");
+  
+  $(document).ready(function() {
+  
+      new Vue({
+          el: '#upload',
+          data: {
+              files: [],
+              file: {
+                  'src': ''
+              },
+              cropper: {},
+              w: '<%= w.to_s %>',
+              h: '<%= h.to_s %>'
+          },
+          mounted: function() {
+              var vm = this;
+              // softable
+              var el = $('#items');
+              var sortable = new Sortable.create(el.get(0), {
+                  animation: 200,
+                  handle: ".draggable"
+              });
+  
+              vm.cropper = new Cropper($(".cropper").get(0));
+              var path = window.location.pathname.split('/');
+  
+              $.ajax({
+                  url: '<%= url %>',
+                  type: 'GET',
+                  success: function(data) {
+                      vm.files = data;
+                  }
+              });
+  
+              CKEDITOR.replaceAll('ckeditor');
+          },
+          methods: {
+              onClickRemove: function(file, e) {
+                  this.files.splice(this.files.indexOf(file), 1);
+              },
+              onClickEdit: function(file, e) {
+                  var vm = this;
+                  vm.file = file;
+  
+                  vm.cropper.destroy();
+  
+                  // wait vue
+                  window.setTimeout(function() {
+                      vm.cropper = new Cropper($(".cropper").get(0), {
+                          cropBoxResizable: true,
+                          dragMode: 'none',
+                          zoomable: false,
+                          responsive: true,
+                          aspectRatio: vm.w / vm.h,
+                          autoCropArea: 0.6,
+                          checkOrientation: false,
+                          crop: function(e) {
+                              // Output the result data for cropping image.
+                              vm.file.crop_x = e.detail.x;
+                              vm.file.crop_y = e.detail.y;
+                              vm.file.crop_w = e.detail.width;
+                              vm.file.crop_h = e.detail.height;
+                          },
+                          data: {
+                              x: vm.file.crop_x,
+                              y: vm.file.crop_y,
+                              width: vm.file.crop_w,
+                              height: vm.file.crop_h
+                          },
+                      });
+                  }, 200)
+              },
+              updateImage: function() {
+                  var vm = this;
+                  var fileIndex = vm.files.indexOf(vm.file);
+  
+                  vm.file.loadding = true;
+                  Vue.set(vm.files, fileIndex, vm.file);
+  
+                  $.ajax({
+                      url: '/admin/images/' + this.file.id,
+                      type: 'PUT',
+                      data: this.file,
+                      success: function(data) {
+                          data.src.crop.url = data.src.crop.url + "?s=" + Math.random() * 5;
+                          Vue.set(vm.files, fileIndex, data)
+                      }
+                  });
+              },
+              uploadImage: function(event) {
+                  var input = event.target;
+                  var vm = this;
+  
+                  // limit image size
+                  var image_size = input.files.length + vm.files.length
+                  if (image_size > 6) return
+  
+                  if (input.files && input.files[0]) {
+  
+                      $.each(input.files, function(index, file) {
+                          var formData = new FormData();
+                          formData.append('file', file);
+                          formData.append('w', vm.w);
+                          formData.append('h', vm.h);
+                          vm.files.push({
+                              loadding: true,
+                              src: {
+                                  crop: ''
+                              }
+                          });
+  
+                          $.ajax({
+                              url: '/admin/images/',
+                              type: 'POST',
+                              data: formData,
+                              processData: false,
+                              contentType: false,
+                              success: function(data) {
+                                  vm.files.push(data);
+  
+                                  $.each(vm.files, function(index, value) {
+                                      if (value.id === undefined) {
+                                          vm.files.splice(index, 1);
+                                      }
+                                  });
+  
+  
+                              }
+                          });
+                      });
+                  }
+              }
+          }
+      });
+  });
+</script>

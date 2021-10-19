@@ -1,0 +1,8 @@
+{
+  "name": "dsl-generated-dependencies",
+  "dependencies": {
+    "sortable": "git://github.com/RubaXa/Sortable",
+    "vue": "latest",
+    "cropperjs": "latest"
+  }
+}

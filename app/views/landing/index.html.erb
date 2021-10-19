@@ -1,0 +1,139 @@
+<!--slider-->
+<section>
+  <div class="light_Banner_container_table">
+    <div class="light_Banner_container_table_cell">
+      <h3><img src="<%= image_url 'ch-logo.svg'%>" alt="logo-ch康橋漫旅"></h3>
+      <h2><%= @setting.title %></h2>
+      <span class="banner-subtitle"><%= @setting.aboutus_name %></span>
+      <span><%= @setting.aboutus_description %></span>
+      <a href="#section1">
+        <div class="banner-arrow">
+          <img src="<%= image_url 'banner-arrow-1.svg'%>" alt="">
+          <img src="<%= image_url 'banner-arrow-1.svg'%>" alt="">
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="slider_container">
+    <ul class="index-slider">
+      <% @landing_banners.images.each do |img| %>
+        <li>
+          <img src="<%= image_url img.src.url(:crop) %>" alt="">
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>
+<!--content-->
+<section id="section1">
+  <div class="container2 content1">
+    <div class="content1_img_container">
+      <div id="section1-pic" class="content1_img_container_row">
+        <% @landing_banners.section1_images.each do |img| %>
+          <img class="mask" src="<%= image_url img.src.url(:crop) %>" />
+        <% end %>
+      </div>
+    </div>
+    <div id="k-bg" class="light_kbg"></div>
+  </div>
+</section>
+<section>
+  <div class="container2 content2">
+    <div id="section2-txt" class="content2_txt">
+      <h2><%= @landing_banners.welcome_to_kindness_day_title %></h2>
+      <h4><%= @landing_banners.welcome_to_kindness_day_subtitle %></h4>
+      <p><%= @landing_banners.welcome_to_kindness_day_description %></p>
+    </div>
+    <div id="section2-pic" class="content2_pic">
+      <div class="overlay_light"></div>
+      <% @landing_banners.section2_images.each do |img| %>
+        <img class="mask" src="<%= image_url img.src.url(:crop) %>" />
+      <% end %>
+    </div>
+  </div>
+</section>
+<section id="section3" class="content3 clearfix">
+  <div id="section3-pic" class="content3_pic">
+    <% @landing_banners.section3_images.each do |img| %>
+      <img class="mask" src="<%= image_url img.src.url(:crop) %>" />
+    <% end %>
+  </div>
+  <div class="content3_txt">
+    <div id="section3-txt" class="content3_txt_container">
+      <h2><%= @landing_banners.room_title %></h2>
+      <p><%= @landing_banners.room_description %></p>
+      <div id="content3-more-b" class="more-arrow_container">
+        <a class='animated-arrow' href='<%= reserv_path(@first_store) %>'>
+          <span class='the-arrow -left'>
+            <span class='shaft'></span>
+          </span>
+          <span class='main'>
+            <span class='text'>
+              MORE
+            </span>
+            <span class='the-arrow -right'>
+              <span class='shaft'></span>
+            </span>
+          </span>
+        </a>
+      </div>
+      <!--more-arrow-->
+      <div id="content3-more-w" class="more-arrow_container-w">
+        <a class='wanimated-arrow' href='<%= reserv_path(@first_store) %>'>
+          <span class='wthe-arrow -left'>
+            <span class='shaft'></span>
+          </span>
+          <span class='main'>
+            <span class='text'>
+              MORE
+            </span>
+            <span class='wthe-arrow -right'>
+              <span class='shaft'></span>
+            </span>
+          </span>
+        </a>
+      </div>
+      <!--more-arrow-->
+    </div>
+  </div>
+</section>
+<!--news-->
+<section id="section4" class="section4">
+  <div class="container">
+    <h2><%= t('landing.news')%></h2>
+    <% @news.each_with_index do |n, index| %>
+      <div class="news_list">
+        <div class="news-pic" style="background-image: url(<%= n.cover(type: :crop) %>);">
+        </div>
+        <div class="news-info">
+          <h3><a href="<%= news_path(n)%>"><%= n.title %></a></h3>
+          <p><a href="<%= news_path(n)%>"><%= n.content%></a></p>
+          <div class="news-info_date_more">
+            <span class="date"><%= n.public_date&.strftime("%Y.%m.%d")%></span>
+            <div class="more-arrow_container-w">
+              <a class='wanimated-arrow' href='<%= news_path(n)%>'>
+                <span class='wthe-arrow -left'>
+                  <span class='shaft'></span>
+                </span>
+                <span class='main'>
+                  <span class='text'>
+                    MORE
+                  </span>
+                  <span class='wthe-arrow -right'>
+                    <span class='shaft'></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <!--more-arrow-->
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <div class="btn-2"><a href="<%= news_index_path%>">VIEW ALL</a></div>
+  </div>
+</section>
+<% content_for :page_javascript do %>
+  <%= javascript_include_tag 'designer/index' %>
+<% end %>

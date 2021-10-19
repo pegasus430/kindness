@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="12px" viewBox="0 0 24 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="TW-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7-news-detail" transform="translate(-937.000000, -1481.000000)" stroke="#FFFFFF">
+            <g id="Group-3" transform="translate(811.000000, 1462.000000)">
+                <g id="Group-5">
+                    <g id="Group-4-Copy" transform="translate(138.500000, 25.000000) scale(-1, 1) translate(-138.500000, -25.000000) translate(127.000000, 19.000000)">
+                        <polyline id="Triangle" transform="translate(20.500000, 6.000000) rotate(-180.000000) translate(-20.500000, -6.000000) " points="23 12 18 6 18 6 23 0"></polyline>
+                        <path d="M0,5 L23,5" id="Rectangle-2" transform="translate(11.500000, 5.229885) rotate(-180.000000) translate(-11.500000, -5.229885) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

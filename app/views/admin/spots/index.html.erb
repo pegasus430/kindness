@@ -1,0 +1,63 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <% if current_user.admin? %>
+            <li class="breadcrumb-item">
+              <%=link_to "分館列表", admin_stores_path %>
+            </li>
+          <% end %>
+          <li class="breadcrumb-item active">
+            <%= @store.title %>
+          </li>
+        </ol>
+      </div>
+      <h4 class="page-title">週邊景點</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="col-12">
+          <%= link_to new_admin_store_spot_path(@store), :class => "btn btn-sm btn-primary btn-outline-secondary" do %>
+            <i class="fa fa-plus" aria-hidden="true"></i> 新增週邊景點
+          <% end %>
+        </div>
+        <div class="col-12">
+                <ul class="nav nav-tabs nav-justified nav-bordered mb-3">
+                    <li class="nav-item">
+                        <a href="#home-b2" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                            <i class="mdi mdi-home-variant d-lg-none d-block mr-1"></i>
+                            <span class="d-none d-lg-block">找景點(<%= @hotspots.count %>)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#profile-b2" data-toggle="tab" aria-expanded="true" class="nav-link">
+                            <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
+                            <span class="d-none d-lg-block">找商圈(<%= @shoppings.count %>)</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content ">
+                    <div class="tab-pane show active" id="home-b2">
+                      <%= render partial: 'spots_list', locals: { spots: @hotspots}%>
+                    </div>
+                    <div class="tab-pane show" id="profile-b2">
+                       <%= render partial: 'spots_list', locals: { spots: @shoppings}%>
+                    </div>
+                </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-md-7">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

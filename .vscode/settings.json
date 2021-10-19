@@ -1,0 +1,8 @@
+{
+    "i18n-ally.localesPaths": [
+        "config/locales",
+        "public/assets/ckeditor/lang",
+        "public/assets/ckeditor/plugins/a11yhelp/dialogs/lang",
+        "public/assets/ckeditor/plugins/specialchar/dialogs/lang"
+    ]
+}

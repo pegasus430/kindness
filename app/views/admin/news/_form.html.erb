@@ -1,0 +1,121 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <h4 class="page-title"><%= title %></h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <%= form_for([:admin, @news], :html => {class: 'needs-validation', :novalidate => 'novalidate'}) do |f| %>
+          <p class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i> 圖片建議：最佳尺寸：1990px X 1138px
+          </p>
+          <p class="text-muted font-14"> <i class="mdi mdi-flag-variant-outline"></i> 圖片編輯：上傳後請點擊“編輯”，裁切最適畫面。
+          </p>
+          <%= render partial: "admin/images/upload", :locals => 
+          {
+            url: "/admin/news/#{@news&.id}/images",
+            name: 'news',
+            :w => 1990, :h => 1138
+          } 
+        %>
+          <hr>
+          <div class="form-group mb-3">
+            <label for="grade_name"><span class="text-danger">*</span> 公告日期</label>
+            <%= f.text_field :public_date, class: 'form-control date', 
+              'data-toggle': "date-picker", 'data-single-date-picker': "true", 
+              'data-locale': "{'format': 'YYYY/DD/MM'}",
+              required: true  %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <div class="custom-control custom-checkbox">
+              <%= f.check_box :top, class: 'custom-control-input', id: 'top' %> 
+              <label class="custom-control-label" for="top">是否置頂</label>
+            </div>            
+          </div>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 名稱(中文)</label>
+            <%= f.text_field :title, name: 'news[title_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @news.title_zh_tw  %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 簡介(中文)</label>
+            <div class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i> 名稱與簡介文案須控制字數，不得過長</div>
+            <%= f.text_field :content, name: 'news[content_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @news.content_zh_tw  %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="grade_name"><span class="text-danger">*</span> 描述(中文)</label>
+            <%= f.cktext_area :description, 
+                          :class => 'ckeditor',
+                          :name => 'news[description_zh_tw]',
+                          :rows => 10,
+                          value: @news.description_zh_tw,
+                          :ckeditor => {:toolbar => 'Full', 
+                                        :height => '500px',   
+                                        :language => 'zh-TW'} %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="grade_name"><span class="text-danger">*</span> 名稱(英文)
+            <div class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i> 名稱與簡介文案須控制字數，不得過長</div>
+            </label>
+            
+            <%= f.text_field :title, name: 'news[title_en]',label: '名稱', class: 'form-control', :required => true, value: @news.title_en %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+
+          </div>
+          <div class="form-group mb-3">
+            <label for="grade_name"><span class="text-danger">*</span> 簡介(英文)</label>
+            <%= f.text_field :content, name: 'news[content_en]',label: '名稱', class: 'form-control', :required => true, value: @news.content_en %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="grade_name"><span class="text-danger">*</span> 描述(英文)</label>
+            
+            <%= f.cktext_area 'description_en', 
+            :class => 'ckeditor',
+            :name => 'news[description_en]',
+            value: @news.description_en,
+            :rows => 10,
+            :ckeditor => {:toolbar => 'Full', 
+                          :height => '500px',   
+                          :language => 'zh-TW'} %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <ul class="list-inline wizard mb-0">
+            <li class="previous list-inline-item">
+              <%= link_to :back, :class => "btn btn-default" do %>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> 返回
+              <% end %>
+            </li>
+            <li class="next list-inline-item float-right">
+              <%= f.submit "送出", class: "btn btn-primary pull-right" %>
+            </li>
+          </ul>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

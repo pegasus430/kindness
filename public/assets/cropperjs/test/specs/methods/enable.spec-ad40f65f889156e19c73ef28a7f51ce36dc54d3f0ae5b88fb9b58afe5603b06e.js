@@ -1,0 +1,1 @@
+describe("enable (method)",()=>{it("should be enabled",e=>{const d=window.createImage(),a=new Cropper(d,{ready(){a.disable(),expect(a.disabled).to.be["true"],expect(a.cropper.className).to.include("cropper-disabled"),a.enable(),expect(a.disabled).to.be["false"],expect(a.cropper.className).to.not.include("cropper-disabled"),e()}})})});

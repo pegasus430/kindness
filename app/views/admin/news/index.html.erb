@@ -1,0 +1,75 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+      </div>
+      <h4 class="page-title">最新消息</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="col-12">
+          <div class="page-title-box">
+            <div class="page-title-right">
+              <%= link_to new_admin_news_path, :class => "btn btn-sm btn-primary btn-outline-secondary" do %>
+                <i class="fa fa-plus" aria-hidden="true"></i> 新增最新消息
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive-sm">
+          <form id="seqForm" name="seqForm">
+            <table class="table table-centered mb-0">
+              <thead>
+                <td>封面圖</td>
+                <td>公告日期</td>
+                <td>是否置頂</td>
+                <th>名稱</th>
+                <th>簡述</th>
+                <th></th>
+              </thead>
+              <tbody class="rows">
+                <% @news.each_with_index do |news, index| %>
+                  <tr class="item">
+                    <td>
+                      <%=image_tag news.cover(type: :thumb) %>
+                    </td>
+                    <td>
+                      <%= news.public_date&.strftime("%Y-%m-%d") %>
+                    </td>
+                    <td>
+                      <% if news.top %>
+                        <span class="mdi mdi-check"><span> 
+                      <% end %>
+                    </td>
+                    <td>
+                      中文: <%= news.title_zh_tw %><br/>
+                      英文: <%= news.title_en %>
+                    </td>
+                    <td>
+                      中文: <%= news.content_zh_tw.first(20) %>...<br/>
+                      英文: <%= news.content_en.first(20) %>...
+                    </td>
+                    
+                    <td class="table-action">
+                      <%= link_to "修改", edit_admin_news_path(news), class: "mdi mdi-pencil" %> | 
+                      <%= link_to "刪除", admin_news_path(news),  class: "mdi mdi-delete", method: :delete,  data: { confirm: "你確定要刪除嗎?" }   %>
+                    </td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </form>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-md-7">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+      </div>
+      <h4 class="page-title">首頁設定</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="col-12">
+          <div class="page-title-box">
+            <div class="page-title-right">
+              <!-- 
+              <%= link_to new_admin_banner_path, :class => "btn btn-sm btn-primary btn-outline-secondary" do %>
+                <i class="fa fa-plus" aria-hidden="true"></i> 新增Banner
+              <% end %>
+               -->
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive-sm">
+          <form id="seqForm" name="seqForm">
+            <table class="table table-centered mb-0">
+              <thead>
+                <td>封面圖</td>
+                <td>名稱</td>
+                <td></td>
+              </thead>
+              <tbody class="rows">
+                <% @banners.each_with_index do |banner, index| %>
+                  <tr class="item">
+                    <td>                      
+                      <%=image_tag banner.cover(type: :thumb) %>
+                    </td>
+                    <td>
+                      中文: <%= banner.room_title_zh_tw %>
+                      
+                      <br/>
+                      英文: <%= banner.room_title_en %>
+                    
+                    </td>
+                    <td class="table-action">
+                      <%= link_to "修改", edit_admin_banner_path(banner), class: "mdi mdi-pencil" %> 
+                      <!-- 
+                      | 
+                      <%= link_to "刪除", admin_banner_path(banner),  class: "mdi mdi-delete", method: :delete,  data: { confirm: "你確定要刪除嗎?" }   %>
+                       -->
+                    </td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </form>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-md-7">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

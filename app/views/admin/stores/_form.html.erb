@@ -1,0 +1,243 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <h4 class="page-title"><%= title %></h4>
+    </div>
+  </div>
+</div>
+<%= form_for([:admin, @store], :html => {class: 'needs-validation', :novalidate => 'novalidate'}) do |f| %>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body">
+          <h1>一、分館列表縮圖</h1>
+          <hr/>
+          <h3>交通資訊</h3>
+          <p class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i> 圖片建議：數量 1，最佳尺寸： 1547px X 306px 
+          </p>
+          <p class="text-muted font-14"> <i class="mdi mdi-flag-variant-outline"></i> 圖片編輯：上傳後請點擊“編輯”，裁切最適畫面。
+          </p>
+          <%= render partial: "admin/images/uploadSingle", :locals => 
+          {
+            url: "/admin/stores/#{@store.id}/traffic_images",
+            form_name: 'store',
+            col_name: 'traffic_image_ids',
+            max_size: 1,
+            :w => 1547, :h => 306 
+          } 
+        %>
+          <h3>訂房Go!</h3>
+          <p class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i> 圖片建議：數量 1，最佳尺寸：465px X 306px
+          </p>
+          <p class="text-muted font-14"> <i class="mdi mdi-flag-variant-outline"></i> 圖片編輯：上傳後請點擊“編輯”，裁切最適畫面。
+          </p>
+          <!-- 簡化上傳圖片 zzzzzzz -->
+          <%= render partial: "admin/images/uploadSingle", :locals => 
+          {                        
+            url: "/admin/stores/#{@store.id}/cover_images",
+            form_name: 'store',
+            col_name: 'cover_image_ids',
+            max_size: 1,
+            :w => 465, :h => 306 
+          } %>
+
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 地區</label>
+            <%= f.select(:region_id, Region.all.collect {|u| [u.title, u.id]},{}, {class: 'form-control'} ) %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="card">
+        <div class="card-body">
+          <div class="box-body">
+          <h1>二、旅館共用資訊</h1>
+            <hr/>
+            <div class="form-group mb-3">
+              <label><span class="text-danger">*</span> 旅館名稱(中文)</label>
+              <%= f.text_field :title, name: 'store[title_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @store.title_zh_tw %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label><span class="text-danger">*</span> 旅館地址(中文)</label>
+              <%= f.text_field :address, name: 'store[address_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @store.address_zh_tw %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label><span class="text-danger">*</span> 訂房Go!旅館簡介(中文)</label>
+              <%= f.cktext_area 'desc_zh_tw', 
+                        :class => 'ckeditor',
+                        :name => 'store[desc_zh_tw]',
+                        :rows => 10,
+                        value: @store.desc_zh_tw,
+                        :ckeditor => {:toolbar => 'Full', 
+                                        :height => '500px',   
+                                      :language => 'zh-TW'} %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="grade_name"><span class="text-danger">*</span> 旅館名稱(英文)</label>
+              <%= f.text_field :title, name: 'store[title_en]',label: '名稱', class: 'form-control', :required => true, value: @store.title_en  %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="grade_name"><span class="text-danger">*</span> 旅館地址(英文)</label>
+              <%= f.text_field :address, name: 'store[address_en]',label: '名稱', class: 'form-control', :required => true, value: @store.address_en  %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label><span class="text-danger">*</span> 訂房Go!旅館簡介(英文)</label>
+              <%= f.cktext_area 'desc_en', 
+              :class => 'ckeditor',
+              :name => 'store[desc_en]',
+              :rows => 10,
+              value: @store.desc_en,
+              :ckeditor => {:toolbar => 'Full', 
+                                :height => '500px',   
+                            :language => 'zh-TW'} %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="box-body">
+            <div class="form-group mb-3">
+              <h1>三、住宿須知</h1>
+              <hr/>
+              <label><span class="text-danger">*</span> 住宿須知事項(中文)</label>
+              <%= f.cktext_area 'reservation_information_zh_tw', 
+                :class => 'ckeditor',
+                :name => 'store[reservation_information_zh_tw]',
+                :rows => 10,
+                value: @store.reservation_information_zh_tw,
+                :ckeditor => {:toolbar => 'Full', 
+                              :height => '200px',   
+                              :language => 'zh-TW'} %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label><span class="text-danger">*</span> 住宿須知事項(英文)</label>
+              <%= f.cktext_area 'reservation_information_en', 
+                :class => 'ckeditor',
+                :name => 'store[reservation_information_en]',
+                :rows => 10,
+                value: @store.reservation_information_en,
+                :ckeditor => {:toolbar => 'Full', 
+                              :height => '200px',   
+                              :language => 'zh-TW'} %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label><span class="text-danger">*</span> 住宿時間(中文)</label>
+              <%= f.cktext_area 'reservation_check_in_time_zh_tw', 
+                :class => 'ckeditor',
+                :name => 'store[reservation_check_in_time_zh_tw]',
+                :rows => 10,
+                value: @store.reservation_check_in_time_zh_tw,
+                :ckeditor => {:toolbar => 'Full', 
+                              :height => '100px',   
+                              :language => 'zh-TW'} %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label><span class="text-danger">*</span> 住宿時間(英文)</label>
+              <%= f.cktext_area 'reservation_check_in_time_en', 
+                :class => 'ckeditor',
+                :name => 'store[reservation_check_in_time_en]',
+                :rows => 10,
+                value: @store.reservation_check_in_time_en,
+                :ckeditor => {:toolbar => 'Full', 
+                              :height => '100px',   
+                              :language => 'zh-TW'} %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label><span class="text-danger">*</span> 旅館資訊(中文)</label>
+              <%= f.cktext_area 'reservation_contact_info_zh_tw', 
+                :class => 'ckeditor',
+                :name => 'store[reservation_contact_info_zh_tw]',
+                :rows => 10,
+                value: @store.reservation_contact_info_zh_tw,
+                :ckeditor => {:toolbar => 'Full', 
+                              :height => '150px',   
+                              :language => 'zh-TW'} %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label><span class="text-danger">*</span> 旅館資訊(英文)</label>
+              <%= f.cktext_area 'reservation_contact_info_en', 
+                :class => 'ckeditor',
+                :name => 'store[reservation_contact_info_en]',
+                :rows => 10,
+                value: @store.reservation_contact_info_en,
+                :ckeditor => {:toolbar => 'Full', 
+                              :height => '150px',   
+                              :language => 'zh-TW'} %>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          <hr>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 提供刷卡服務的信用卡(中文)</label>
+            <div>
+              <% ["visa","master","jcb","linkcard","union"].each do |card| %>
+                <input type="checkbox" name="store[credit_cards_zh_tw][]" value="<%= card %>" <%= (@credit_cards_zh_tw && @credit_cards_zh_tw.include?(card)) ? 'checked' : '' %> >
+                <img src="<%= image_url "#{card}.png"%>" alt="">
+              <% end %>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 提供刷卡服務的信用卡(英文)</label>
+            <div>
+              <% ["visa","master","jcb","linkcard","union"].each do |card| %>
+                <input type="checkbox" name="store[credit_cards_en][]" value="<%= card %>" <%= (@credit_cards_en && @credit_cards_en.include?(card)) ? 'checked' : '' %> >
+                <img src="<%= image_url "#{card}.png"%>" alt="">
+              <% end %>
+            </div>
+          </div>
+          </div>
+          <ul class="list-inline wizard mb-0">
+            <li class="previous list-inline-item">
+              <%= link_to :back, :class => "btn btn-default" do %>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> 返回
+              <% end %>
+            </li>
+            <li class="next list-inline-item float-right">
+              <%= f.submit "送出", class: "btn btn-primary pull-right" %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

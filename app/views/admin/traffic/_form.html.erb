@@ -1,0 +1,84 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <% if current_user.admin? %>
+            <li class="breadcrumb-item">
+              <%=link_to "分館列表", admin_stores_path %>
+            </li>
+          <% end %>
+          <li class="breadcrumb-item">
+            <%= link_to "#{@store.title}交通方式", admin_store_traffic_index_path(@store) %>
+          </li>
+          <li class="breadcrumb-item active">
+            <%= @traffic.title %>
+          </li>
+        </ol>
+      </div>
+      <h4 class="page-title"><%= title %></h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <%= form_for([:admin, @store, @traffic], url: url ,:html => {class: 'needs-validation', :novalidate => 'novalidate'}) do |f| %>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 名稱(中文)</label>
+            <%= f.text_field :title, name: 'traffic[title_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @traffic.title_zh_tw  %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="grade_name"><span class="text-danger">*</span> 交通方式(中文)</label>
+            <%= f.cktext_area 'description_zh_tw', 
+                          :class => 'ckeditor',
+                          :name => 'traffic[description_zh_tw]',
+                          :rows => 10,
+                          value: @traffic.description_zh_tw,
+                          :ckeditor => {:toolbar => 'Full', 
+                                        :height => '200px',   
+                                        :language => 'zh-TW'} %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 名稱(英文)</label>
+            <%= f.text_field :title, name: 'traffic[title_en]',label: '名稱', class: 'form-control', :required => true, value: @traffic.title_en  %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="grade_name"><span class="text-danger">*</span> 交通方式(英文)</label>
+            <%= f.cktext_area 'description_en', 
+                          :class => 'ckeditor',
+                          :name => 'traffic[description_en]',
+                          :rows => 10,
+                          value: @traffic.description_en,
+                          :ckeditor => {:toolbar => 'Full', 
+                                        :height => '200px',   
+                                        :language => 'zh-TW'} %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <ul class="list-inline wizard mb-0">
+            <li class="previous list-inline-item">
+              <%= link_to admin_store_traffic_index_path(@store), :class => "btn btn-default" do %>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> 返回
+              <% end %>
+            </li>
+            <li class="next list-inline-item float-right">
+              <%= f.submit "送出", class: "btn btn-primary pull-right" %>
+            </li>
+          </ul>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

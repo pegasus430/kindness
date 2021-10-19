@@ -1,0 +1,55 @@
+ <!--slider-->
+<section class="inside-page-banner">
+  <div class="light_Banner_container_table inside-banner">
+    <div class="light_Banner_container_table_cell">
+      <h2><%= t('news.title')%></h2>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="inside-banner-contain" style="background-image: url(<%= image_url 'news-list.jpg'%>);"></div>
+</section>
+<!--content-->
+<section id="section4" class="section4">
+  <div class="container">
+    <% @news.each_with_index do |n, index| %>
+      <div class="news_list">
+        <div class="news-pic" style="background-image: url(<%= n.cover(type: :crop) %>);"><a href="<%= news_path(n)%>"></a></div>
+        <div class="news-info">
+          <h3><a href="<%= news_path(n)%>"><%= n.title %></a></h3>
+          <p><a href="<%= news_path(n)%>"><%= n.content%></a></p>
+          <div class="news-info_date_more">
+            <span class="date"><%= n.public_date&.strftime("%Y.%m.%d")%></span>
+            <div class="more-arrow_container-w">
+              <a class='animated-arrow' href='<%= news_path(n)%>'>
+                <span class='the-arrow -left'>
+                  <span class='shaft'></span>
+                </span>
+                <span class='main'>
+                  <span class='text'>
+                    MORE
+                  </span>
+                  <span class='the-arrow -right'>
+                    <span class='shaft'></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <!--more-arrow-->
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= will_paginate @cs, renderer: @custom_paginate_renderer %>
+    <!-- 
+    <div class="pagination">
+      <ul>
+        <li class="active"><a href="#" id="">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </div>
+     -->
+  </div>
+</section>

@@ -1,0 +1,5473 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700&subset=chinese-traditional");
+@import url("https://fonts.googleapis.com/css?family=Spectral:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500");
+/* line 6, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei','微軟正黑體', 'Heiti TC','Segoe UI',SegoeUI, sans-serif; }
+
+/* line 13, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  -webkit-text-size-adjust: none; }
+
+/* line 23, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 27, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px; }
+
+/* line 38, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+ul,
+ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+/* line 45, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+a,
+a:hover,
+a:focus {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none; }
+
+/* line 53, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+a {
+  color: #FFF; }
+
+/* line 57, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.container {
+  width: 85%;
+  max-width: 1990px;
+  margin: 0 auto;
+  position: relative; }
+
+/* line 64, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.container-full {
+  width: 100%;
+  max-width: 1990px;
+  margin: 0 auto;
+  position: relative; }
+
+/* line 70, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+header {
+  position: relative; }
+
+/* line 74, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+footer {
+  height: auto;
+  width: 100vw;
+  background-color: #111; }
+
+/* line 80, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* line 86, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+h2 {
+  color: #0C2340; }
+
+/*=========== scrollbar fix ==============*/
+@-ms-viewport {
+  width: device-width; }
+/* line 93, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+body::-webkit-scrollbar {
+  display: none; }
+
+/* line 97, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+body {
+  -ms-overflow-style: none; }
+
+/*=========================basic===========================*/
+/* line 103, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] p, html[lang="en"] p a, html[lang="en"] span {
+  letter-spacing: 0.5px !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 26px; }
+
+/* line 109, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] h4, html[lang="en"] h5 {
+  letter-spacing: 0.5px;
+  font-family: 'Montserrat', sans-serif; }
+
+/* line 114, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] a {
+  letter-spacing: 0.5px;
+  font-family: 'Montserrat', sans-serif; }
+
+/* line 118, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .light_Banner_container_table_cell h3 {
+  display: none; }
+
+/* line 122, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-service-incon p, html[lang="en"] .facility-service-incon span {
+  text-align: center !important; }
+
+/* line 125, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-service-incon span {
+  font-size: 16px; }
+
+/* line 128, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-service-incon li {
+  max-width: 200px; }
+
+/* line 131, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .icon-ul {
+  padding-right: 0%; }
+
+/* line 134, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-service-incon h3 {
+  top: -90px;
+  left: -10px;
+  text-align: center; }
+
+/* line 139, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .nav {
+  font-size: 11px; }
+
+/* line 142, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .nav .active a {
+  padding-top: 1px; }
+
+/* line 145, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .nav a {
+  padding-top: 1px; }
+
+/* line 148, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .nav a:hover {
+  padding-top: 1px; }
+
+/* line 151, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .nav1200-right span {
+  font-family: 'Spectral', serif;
+  font-size: 42px; }
+
+/* line 155, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .news-txt-right p {
+  text-align: left; }
+
+/* line 158, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .content3_txt_container p {
+  text-align: left; }
+
+/* line 161, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .content2_txt p {
+  text-align: left;
+  padding-top: 25px; }
+
+/* line 165, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .content2_txt h4 {
+  line-height: 25px;
+  font-size: 1.5em;
+  padding-top: 25px;
+  text-transform: uppercase; }
+
+/* line 171, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .food-bgtxt span {
+  font-family: "Spectral", serif !important;
+  font-size: 115px; }
+
+/* line 175, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .footer_title {
+  display: none; }
+
+/* line 178, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .news-btn {
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 29px; }
+
+/* line 183, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .btn-2 {
+  padding: 12px;
+  line-height: 30px; }
+
+/* line 187, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .about-left span {
+  font-family: 'Spectral', serif;
+  font-size: 190px;
+  line-height: 1.42857143; }
+
+/* line 192, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .about-right span {
+  font-family: 'Spectral', serif;
+  font-size: 190px;
+  line-height: 1.42857143; }
+
+/* line 197, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .about-right h4 {
+  letter-spacing: 0.5px;
+  font-family: 'Montserrat', sans-serif; }
+
+/* line 201, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .footer_copyright span:nth-child(2) {
+  display: none; }
+
+/* line 204, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .footer_copyright span:nth-child(1) {
+  width: 100%; }
+
+/* line 207, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .news-txt-left h4 {
+  font-size: 20px; }
+
+/* line 210, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .news-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px; }
+
+/* line 215, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .about-content p {
+  padding-top: 25px;
+  line-height: 26px; }
+
+/* line 219, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .traffic h4 {
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+/* line 224, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .reserv-txt h4 {
+  font-size: 21px;
+  font-weight: 500; }
+
+/* line 228, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .reserv-detail-txt h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; }
+
+/* line 232, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .reserv-detail-txt li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 28px; }
+
+/* line 237, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .about-content h4 {
+  font-size: 18px;
+  font-weight: 500; }
+
+/* line 241, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-top span {
+  font-weight: 500;
+  line-height: 26px;
+  font-size: 18px; }
+
+/* line 246, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] ul.facility-nav li.current p {
+  font-size: 17px; }
+
+/* line 249, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-list p {
+  line-height: 33px; }
+
+/* line 252, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .traffic-tab li {
+  font-size: 14px;
+  width: auto;
+  letter-spacing: .5px; }
+
+/* line 257, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .map-info h4 {
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+/* line 262, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .traffic-grey h4 {
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+/* line 267, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .map-info p {
+  font-size: 16px; }
+
+/* line 270, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .traffic-where h5 {
+  font-size: 17px; }
+
+/* line 273, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .accordion a {
+  font-size: 17px;
+  font-weight: 500; }
+
+/* line 277, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .traffic-slide-txt h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: .5px; }
+
+/* line 283, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .traffic-slide-txt span {
+  font-family: "Spectral", serif !important; }
+
+/* line 286, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .news-txt-left p {
+  font-family: 'Spectral', serif;
+  font-size: 18px; }
+
+/* line 290, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .news-txt-left h4 {
+  font-size: 20px; }
+
+/* line 293, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .footer_link a {
+  font-size: 1.4em !important; }
+
+/* line 296, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .reserv-bottom-txt li {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .5px; }
+
+/* line 300, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .traffic-how h4 {
+  font-size: 21px;
+  font-weight: 400; }
+
+/* line 304, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-top h2 {
+  margin-bottom: 45px; }
+
+/* line 307, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-service-incon li:nth-child(2) h3 {
+  left: 0px; }
+
+/* line 310, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-service-incon li:nth-child(3) h3 {
+  left: 0px; }
+
+/* line 313, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-service-incon ul:nth-child(2) li:nth-child(2) h3 {
+  left: 0px !important; }
+
+/* line 316, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-service-incon ul:nth-child(2) li:nth-child(3) h3 {
+  left: 0px !important; }
+
+/*=======================lang en=============================*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 322, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_pic {
+    display: block; } }
+/*=========================IE===========================*/
+/* line 330, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light_menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 115px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 99; }
+
+/* line 340, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 1990px;
+  margin: 0 auto;
+  position: relative; }
+
+/* line 350, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light-logo {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  width: 22%;
+  min-width: 230px;
+  height: 115px;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.5); }
+
+/* line 364, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light-logo img {
+  width: 100%;
+  height: auto;
+  padding: 25px; }
+
+/* line 370, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light-nav-container {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  flex-direction: column;
+  width: 66%;
+  height: 115px; }
+
+/* line 381, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light-icon {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  height: 115px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5); }
+
+/* line 394, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light-icon a {
+  opacity: 1;
+  -webkit-transition: 1s;
+  /* Safari */
+  transition: 1s; }
+
+/* line 401, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light-icon a:hover {
+  opacity: .6; }
+
+/* line 405, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light-icon img {
+  padding-left: 20px; }
+
+/* line 409, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light-lan {
+  display: block;
+  width: 100%;
+  height: 57px;
+  line-height: 57px;
+  padding-right: 30px;
+  color: #FFF;
+  text-align: right;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+
+/* line 420, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light-lan a {
+  color: #FFF;
+  letter-spacing: 3px;
+  font-size: 13px; }
+
+/* line 426, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav {
+  display: block;
+  width: 100%;
+  height: 57px;
+  line-height: 57px;
+  color: #FFF;
+  letter-spacing: 3px;
+  font-size: 15px;
+  text-transform: uppercase; }
+
+/* line 437, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav ul {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+/* line 447, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav li {
+  width: 100%;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.5); }
+
+/* line 453, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav li:last-child {
+  border-right: 0px solid #FFF; }
+
+/* line 457, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav a {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  color: #FFF;
+  -webkit-transition: 1s;
+  /* Safari */
+  transition: 1s; }
+
+/* line 466, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav .active a {
+  background-color: rgba(255, 255, 255, 0.4); }
+
+/* line 469, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.4); }
+
+/*=========================desktop light nav===========================*/
+/* line 475, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#navbar {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  position: fixed;
+  top: -70px;
+  width: 100%;
+  height: 70px;
+  transition: 0.6s;
+  z-index: 80;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+/* line 494, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#navbar.black {
+  background-color: #111 !important; }
+
+/* line 498, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#navbar.black a {
+  color: #FFF; }
+
+/* line 501, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1990px;
+  width: 100%;
+  height: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto; }
+
+/* line 514, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.navbar_logo {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  align-items: center;
+  min-width: 178px; }
+
+/* line 523, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.navbar_logo img {
+  width: 177px; }
+
+/* line 526, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.navbar_logo a {
+  display: inline-block;
+  position: relative; }
+
+/* line 531, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav-logo-b {
+  opacity: 1;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
+/* line 539, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav-logo-b.dis {
+  opacity: 0;
+  height: 0; }
+
+/* line 544, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav-logo-w {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 27px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
+/* line 556, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav-logo-w.show {
+  top: 0;
+  left: 0;
+  height: 27px;
+  opacity: 1; }
+
+/* Style the navbar links */
+/* line 564, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.navbar_link a {
+  float: left;
+  font-size: 14px;
+  letter-spacing: 3px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px;
+  -webkit-transition: .6s;
+  /* Safari */
+  transition: .6s;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+/* line 579, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.navbar_link a:hover {
+  background-color: #000;
+  color: #FFF; }
+
+/* line 584, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.black .navbar_link a:hover {
+  background-color: #FFF;
+  color: #000 !important; }
+
+/* line 589, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.navbar_icon {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 598, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.navbar_icon span:nth-child(3) {
+  margin-left: -67px;
+  opacity: 0; }
+
+/* line 602, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.navbar_icon span:nth-child(4) {
+  margin-left: 0px;
+  opacity: 0; }
+
+/* line 606, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.black .navbar_icon span:nth-child(3), .black .navbar_icon span:nth-child(4) {
+  opacity: 1; }
+
+/* line 609, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.navbar_icon img {
+  padding-left: 20px; }
+
+/*=========================desktop light scroll navbar===========================*/
+/* line 615, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light_Banner_container_table {
+  color: #FFF;
+  display: table;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 4; }
+
+/* line 624, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light_Banner_container_table_cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+
+/* line 630, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light_Banner_container_table_cell h2 {
+  font-family: 'Spectral', serif;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 70px;
+  line-height: 125px; }
+
+/* line 639, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light_Banner_container_table_cell h3 {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 2.5px; }
+
+/* line 646, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light_Banner_container_table_cell span {
+  display: block;
+  position: relative;
+  top: 28vh;
+  line-height: 35px;
+  letter-spacing: 3px;
+  padding-left: 2%;
+  padding-right: 2%; }
+
+/* line 655, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.banner-subtitle {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+/* line 660, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.overlay {
+  background-color: #000;
+  opacity: .5;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+/* line 671, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slider_container {
+  position: relative;
+  width: 100vw;
+  /* Update to your slider width */
+  height: 100vh;
+  /* Update to your slider height */
+  overflow-x: hidden;
+  z-index: -1; }
+
+/* line 681, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.index-slider img {
+  height: 100vh;
+  position: relative;
+  /* allows repositioning */
+  left: 100%;
+  /* move the whole width of the image to the right */
+  margin-left: -200%;
+  -webkit-animation-name: scale;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: scale;
+  animation-duration: 8s;
+  animation-iteration-count: infinite; }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scale {
+  from {
+    transform: scale(2, 2); }
+  to {
+    transform: scale(1.7, 1.7); } }
+/* Standard syntax */
+@keyframes scale {
+  from {
+    transform: scale(2, 2); }
+  to {
+    transform: scale(1.7, 1.7); } }
+/* line 719, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.index-slider {
+  width: 100vw;
+  /* Update to your slider width */
+  height: 100vh;
+  /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  /* Update to your slider height */
+  position: relative;
+  text-align: center;
+  margin: 0 0; }
+
+/* line 730, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.index-slider li {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+/*=========================slider===========================*/
+/* line 740, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.banner-arrow {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+  margin: 0 auto;
+  top: 30vh; }
+
+/* line 755, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.banner-arrow img {
+  position: absolute;
+  -webkit-animation: arrow 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: arrow 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-delay: 0;
+  animation-delay: 0s; }
+
+/* line 762, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.banner-arrow img:first-child {
+  bottom: 8px;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes arrow {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes chevron-pulse {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes chevron-pulse {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+/* line 840, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.tcon-svgchevron {
+  height: 30px;
+  width: 45px; }
+
+/* line 845, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.tcon-svgchevron path {
+  -webkit-animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+  stroke: white;
+  stroke-width: 1px; }
+
+/* line 853, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.tcon-svgchevron path.a1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+/* line 858, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.tcon-svgchevron path.a2 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s; }
+
+/* line 863, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.tcon-svgchevron path.a3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s; }
+
+/*=========================slider arrow===========================*/
+/* line 868, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.mask {
+  /*-webkit-clip-path: polygon(0 12%, 87% 12%, 87% 100%, 0% 100%);
+  clip-path: polygon(0 12%, 87% 12%, 87% 100%, 0% 100%);*/
+  -webkit-clip-path: polygon(0 4%, 95% 4%, 94% 100%, 0% 100%);
+  clip-path: polygon(0 4%, 95% 4%, 94% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out; }
+
+/* line 877, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.mask.scale {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 884, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.mask2 {
+  /*-webkit-clip-path: polygon(0 12%, 87% 12%, 87% 100%, 0% 100%);
+  clip-path: polygon(0 12%, 87% 12%, 87% 100%, 0% 100%);*/
+  -webkit-clip-path: polygon(0 4%, 95% 4%, 94% 100%, 0% 100%);
+  clip-path: polygon(0 4%, 95% 4%, 94% 100%, 0% 100%);
+  background-color: #ccc;
+  opacity: 1;
+  transition: all .6s ease-out; }
+
+/* line 893, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.mask2.scale2 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  opacity: 1; }
+
+/*=========================img animate===========================*/
+/* line 900, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.inside-page-banner {
+  position: relative;
+  height: 72vh;
+  overflow: hidden;
+  margin-bottom: 70px; }
+
+/* line 906, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.inside-page-banner .overlay {
+  height: 72vh; }
+
+/* line 909, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light_Banner_container_table.inside-banner {
+  height: 72vh; }
+
+/* line 912, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.inside-banner-contain {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 72vh; }
+
+/* line 919, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.inside-page-banner h2 {
+  padding-top: 60px; }
+
+/*=========================inside banner===========================*/
+/* line 924, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.container2 {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1990px;
+  margin: 0 auto;
+  position: relative; }
+
+/* line 938, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content1 {
+  display: table;
+  height: 780px;
+  margin-bottom: 10px;
+  background-color: #FFF; }
+
+/* line 945, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content1_img_container {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  width: 85%; }
+
+/* line 952, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content1_img_container_row {
+  margin-left: 10%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+  padding: 10% 0; }
+
+/* line 960, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content1_img_container_row.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 965, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content1_img_container img {
+  width: 40%;
+  margin-right: 25px; }
+
+/* line 970, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light_kbg {
+  width: 25%;
+  height: 130vh;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  float: right;
+  background-color: #FFF;
+  background-image: url(/assets/k-bg-2cd3fd328901d77c3ddaeb48d8efbbe9b3a9371bca09368b1a65af6baec4f8e6.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out; }
+
+/* line 988, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.light_kbg.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/*=========================index-content1===========================*/
+/* line 994, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content2 {
+  display: block;
+  height: 580px;
+  overflow: hidden; }
+
+/* line 1000, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content2_txt {
+  display: block;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 16%;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out; }
+
+/* line 1012, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content2_txt.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 1017, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content2_txt h2 {
+  font-family: 'Spectral', serif;
+  line-height: 65px;
+  font-size: 4.2em;
+  font-weight: 600;
+  padding: 20px;
+  margin-top: 0px;
+  margin-left: 15%; }
+
+/* line 1027, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content2_txt h4 {
+  line-height: 66px;
+  font-size: 1.7em;
+  font-weight: 500;
+  padding-left: 55px;
+  margin-left: 22%;
+  letter-spacing: 5px; }
+
+/* line 1036, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content2_txt p {
+  color: #666;
+  line-height: 30px;
+  font-size: 1.1em;
+  padding-left: 55px;
+  padding-right: 10%;
+  margin-left: 22%;
+  letter-spacing: 2px;
+  text-align: justify; }
+
+/* line 1047, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content2_pic {
+  position: absolute;
+  display: block;
+  width: 68%;
+  height: 580px;
+  right: 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out; }
+
+/* line 1058, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content2_pic.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 1063, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content2_pic img {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  z-index: -1; }
+
+/* line 1070, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.overlay_light {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+26,ffffff+100&1+0,0+38 */
+  background: -moz-linear-gradient(left, white 0%, rgba(255, 255, 255, 0.32) 26%, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0.32) 26%, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0.32) 26%, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+  /* IE6-9 */
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+  position: absolute;
+  right: 0;
+  z-index: 0; }
+
+/*=========================index-content2===========================*/
+/* line 1085, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3 {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  background-color: #FFF;
+  transition: all .4s ease-out; }
+
+/* line 1102, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3.black {
+  background-color: #111111;
+  color: #FFF !important; }
+
+/* line 1107, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3.black h2 {
+  color: #FFF; }
+
+/* line 1111, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3_pic {
+  width: 50%;
+  float: left;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out; }
+
+/* line 1119, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3_pic.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 1124, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3_pic img {
+  width: 100%; }
+
+/* line 1128, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3_txt {
+  display: table;
+  width: 50%;
+  float: right;
+  padding-right: 12%;
+  height: 325px; }
+
+/* line 1136, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3_txt_container {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 70px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all .6s ease-out; }
+
+/* line 1146, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3_txt_container.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 1151, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3_txt_container p {
+  line-height: 30px;
+  font-size: 1.1em;
+  letter-spacing: 3px;
+  text-align: justify;
+  padding-top: 30px; }
+
+/* line 1159, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3_txt_container h2 {
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-size: 3.6em;
+  line-height: 58px; }
+
+/* line 1166, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.content3_txt_container.black {
+  color: #FFF; }
+
+/*=========================index-content3===========================*/
+/* line 1171, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.section4 {
+  background-color: #FFF;
+  padding-top: 50px;
+  transition: all .4s ease-out;
+  padding-bottom: 160px; }
+
+/* line 1177, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.section4 .container {
+  width: 70%; }
+
+/* line 1180, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.section4 h2 {
+  display: block;
+  width: 100%;
+  color: #0C2340;
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-size: 3.6em;
+  line-height: 58px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+/* line 1192, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.section4.black {
+  background-color: #111111; }
+
+/* line 1196, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.section4.black h2 {
+  color: #FFF; }
+
+/* line 1200, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.section4 .container {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+/* line 1210, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news_list {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 45px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out; }
+
+/* line 1226, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news_list.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 1231, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-pic {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  width: 40%;
+  max-height: 295px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+/* line 1245, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-pic a {
+  position: relative;
+  width: 100%;
+  min-width: 490px;
+  right: 0px; }
+
+/* line 1253, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-info {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -1;
+  width: 60%;
+  max-height: 295px;
+  color: #000;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  /*border: .5px solid rgba(255, 255, 255, .6);*/
+  /*border-left: 0px solid #000;*/
+  margin-left: -1px;
+  padding: 40px 45px 35px 45px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
+/* line 1275, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-info.white {
+  border: 0.5px solid rgba(255, 255, 255, 0.6); }
+
+/* line 1278, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-info a {
+  color: #000; }
+
+/* line 1281, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-info.white a {
+  color: #FFF; }
+
+/* line 1284, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-info.white .more-arrow_container-w:hover .text {
+  color: #9B9B9B; }
+
+/* line 1287, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-info h3 {
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+
+/* line 1298, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-info p {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  font-size: 1.1em;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 2px; }
+
+/* line 1308, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-info_date_more {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center; }
+
+/* line 1316, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-info_date_more .date {
+  color: #9B9B9B;
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+  font-family: 'Spectral', serif;
+  font-style: italic; }
+
+/*=======================btn=========================*/
+/* line 1327, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn-2 a,
+.btn-2 a::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+/* line 1335, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn-2 a {
+  display: block;
+  width: 100%; }
+
+/* line 1340, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn-2 {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 1em auto;
+  padding: 15px;
+  line-height: 24px;
+  width: 258px;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; }
+
+/* line 1358, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn-2 a::before,
+.btn-2 a::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1; }
+
+/* line 1366, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn-2 a:hover {
+  color: #000; }
+
+/* line 1370, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn-2 a::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0; }
+
+/* line 1377, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn-2 a:hover:after {
+  width: 100%; }
+
+/*=======================btn w=========================*/
+/* line 1382, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn a,
+.btn a::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #000; }
+
+/* line 1391, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn a {
+  display: block;
+  width: 100%; }
+
+/* line 1396, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn {
+  background: none;
+  border: 1px solid #000;
+  color: #000;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 1em auto;
+  padding: 15px;
+  line-height: 26px;
+  width: 258px;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; }
+
+/* line 1414, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn a::before,
+.btn a::after {
+  background: #000;
+  content: '';
+  position: absolute;
+  z-index: -1; }
+
+/* line 1422, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn a:hover {
+  color: #FFF; }
+
+/* line 1426, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn a::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0; }
+
+/* line 1433, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn a:hover:after {
+  width: 100%; }
+
+/*=======================btn b=========================*/
+/*=========================index-news===========================*/
+/* line 1438, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.blackbg .light_Banner_container_table_cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: bottom;
+  padding-bottom: 40px; }
+
+/* line 1444, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 1454, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 1459, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-content {
+  width: 78%;
+  max-width: 1150px;
+  position: relative; }
+
+/* line 1464, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-counter {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  color: #FFF;
+  z-index: 9;
+  letter-spacing: 8px;
+  font-size: 16px; }
+
+/* line 1474, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner .slick-slide {
+  margin: 0px 0px; }
+
+/* line 1477, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner img {
+  width: 100%; }
+
+/* line 1480, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner.slider {
+  width: 100%;
+  margin: 0px auto; }
+
+/* line 1484, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner .slide-arrow {
+  position: absolute;
+  top: 45%;
+  margin-top: -55px;
+  cursor: pointer; }
+
+/* line 1490, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner .prev-arrow {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  left: -7% !important;
+  padding: 22px;
+  z-index: 50; }
+
+/* line 1499, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner .prev-arrow img {
+  max-width: 19px; }
+
+/* line 1502, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner .prev-arrow:hover {
+  left: -8% !important; }
+
+/* line 1505, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner .next-arrow {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 22px;
+  right: -7% !important; }
+
+/* line 1513, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner .next-arrow img {
+  max-width: 19px; }
+
+/* line 1516, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-banner .next-arrow:hover {
+  right: -8% !important; }
+
+/* line 1519, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-detail-txt {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 4%;
+  margin-top: 50px;
+  max-width: 1300px; }
+
+/* line 1530, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-txt-left h4 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  padding-bottom: 10px; }
+
+/* line 1536, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-txt-left p {
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #9B9B9B;
+  letter-spacing: 1.5px; }
+
+/* line 1543, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-txt-left {
+  display: inline-block;
+  width: 30%;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 1553, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-txt-left.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 1557, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-txt-right {
+  display: inline-block;
+  width: 65%;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 1567, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-txt-right.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 1571, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-txt-right p {
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: justify; }
+
+/* line 1578, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-detail-btn {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 4%;
+  max-width: 1400px; }
+
+/* line 1588, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-btn-left {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 58%; }
+
+/* line 1597, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-btn-left .btn-2 {
+  margin: 1em 0; }
+
+/* line 1600, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-btn-right {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 42%; }
+
+/* line 1609, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-btn-right .btn-2 {
+  display: inline-block;
+  margin-left: 8%;
+  margin-right: 0px; }
+
+/* line 1614, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-btn-right .btn-2 a .arrow-pre::after {
+  content: '';
+  display: inline-block;
+  padding-left: 8%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url(/assets/news-pre-a9a827ca625539b6026d5434558a8be8b8469d9ef942a7db6f124081e7c43eee.svg);
+  width: 23px;
+  height: 12px; }
+
+/* line 1624, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-btn-right .btn-2 a:hover .arrow-pre::after {
+  content: '';
+  display: inline-block;
+  background-image: url(/assets/news-pre-b-faa80172418effd58531302eb7286c5491272b02f678afc7cc2c11c3b4b16cfe.svg);
+  width: 23px;
+  height: 12px; }
+
+/* line 1631, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-btn-right .btn-2 a .arrow-next::after {
+  content: '';
+  display: inline-block;
+  padding-left: 8%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url(/assets/news-next-a64492ab81b3e5998fe6adf9c16f1f64df45ebd4f468c3949f4b765bbcfcca59.svg);
+  width: 23px;
+  height: 12px; }
+
+/* line 1641, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.news-btn-right .btn-2 a:hover .arrow-next::after {
+  content: '';
+  display: inline-block;
+  background-image: url(/assets/news-next-b-df9c29fea78a455200eb3606d161322942aafd29696f89223402231a0b1f6218.svg);
+  width: 23px;
+  height: 12px; }
+
+/*=========================news detail===========================*/
+/* line 1650, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.more-arrow_container {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  justify-content: flex-start;
+  height: 120px; }
+
+/* line 1661, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.more-arrow_container.dis {
+  display: none; }
+
+/* line 1665, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow {
+  width: 64px;
+  transition: all 0.2s; }
+
+/* line 1670, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow.-left {
+  position: absolute;
+  top: 60%;
+  left: 0; }
+
+/* line 1676, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow.-left > .shaft {
+  width: 0;
+  background-color: #999; }
+
+/* line 1681, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow.-left > .shaft:before,
+.the-arrow.-left > .shaft:after {
+  width: 0;
+  background-color: #999; }
+
+/* line 1687, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow.-left > .shaft:before {
+  -webkit-transform: rotate(0);
+  transform: rotate(0); }
+
+/* line 1692, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow.-left > .shaft:after {
+  -webkit-transform: rotate(0);
+  transform: rotate(0); }
+
+/* line 1697, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow.-right {
+  top: 3px; }
+
+/* line 1701, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow.-right > .shaft {
+  width: 50px;
+  transition-delay: 0.2s; }
+
+/* line 1706, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow.-right > .shaft:before,
+.the-arrow.-right > .shaft:after {
+  width: 8px;
+  transition-delay: 0.3s;
+  transition: all 0.5s; }
+
+/* line 1713, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow.-right > .shaft:before {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg); }
+
+/* line 1718, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow.-right > .shaft:after {
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg); }
+
+/* line 1723, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow > .shaft {
+  background-color: #000;
+  display: block;
+  height: 1px;
+  position: relative;
+  transition: all 0.2s;
+  transition-delay: 0;
+  will-change: transform; }
+
+/* line 1733, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow > .shaft:before,
+.the-arrow > .shaft:after {
+  background-color: #000;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s;
+  transition-delay: 0; }
+
+/* line 1746, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow > .shaft:before {
+  -webkit-transform-origin: top right;
+  transform-origin: top right; }
+
+/* line 1751, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.the-arrow > .shaft:after {
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right; }
+
+/* line 1756, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow {
+  display: inline-block;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.25em;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s; }
+
+/* line 1766, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow:hover {
+  color: #999; }
+
+/* line 1770, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow:hover > .the-arrow.-left > .shaft {
+  width: 64px;
+  transition-delay: 0.1s;
+  background-color: #999; }
+
+/* line 1776, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow:hover > .the-arrow.-left > .shaft:before,
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  width: 8px;
+  transition-delay: 0.1s;
+  background-color: #999; }
+
+/* line 1783, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg); }
+
+/* line 1788, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg); }
+
+/* line 1793, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow:hover > .main {
+  -webkit-transform: translateX(80px);
+  transform: translateX(80px); }
+
+/* line 1798, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+  width: 0;
+  -webkit-transform: translateX(200%);
+  transform: translateX(200%);
+  transition-delay: 0; }
+
+/* line 1805, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before,
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+  width: 0;
+  transition-delay: 0;
+  transition: all 0.1s; }
+
+/* line 1812, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+  -webkit-transform: rotate(0);
+  transform: rotate(0); }
+
+/* line 1817, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+  -webkit-transform: rotate(0);
+  transform: rotate(0); }
+
+/* line 1822, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow > .main {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  align-items: center;
+  transition: all 0.2s; }
+
+/* line 1832, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow > .main > .text {
+  margin: 4px 16px 0 0;
+  line-height: 1; }
+
+/* line 1837, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.animated-arrow > .main > .the-arrow {
+  position: relative; }
+
+/*=========================more arrow===========================*/
+/* line 1842, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.more-arrow_container-w {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px; }
+
+/* line 1853, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.show {
+  opacity: 0;
+  height: 120px;
+  transition: all 0.6s; }
+
+/* line 1858, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.more-arrow_container-w.show {
+  opacity: 1; }
+
+/* line 1861, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow {
+  width: 64px;
+  transition: all 0.2s; }
+
+/* line 1866, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow.-left {
+  position: absolute;
+  top: 60%;
+  left: 0; }
+
+/* line 1872, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow.-left > .shaft {
+  width: 0;
+  background-color: #999; }
+
+/* line 1877, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow.-left > .shaft:before,
+.wthe-arrow.-left > .shaft:after {
+  width: 0;
+  background-color: #999; }
+
+/* line 1883, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow.-left > .shaft:before {
+  -webkit-transform: rotate(0);
+  transform: rotate(0); }
+
+/* line 1888, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow.-left > .shaft:after {
+  -webkit-transform: rotate(0);
+  transform: rotate(0); }
+
+/* line 1893, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow.-right {
+  top: 3px; }
+
+/* line 1897, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow.-right > .shaft {
+  width: 50px;
+  transition-delay: 0.2s; }
+
+/* line 1902, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow.-right > .shaft:before,
+.wthe-arrow.-right > .shaft:after {
+  width: 8px;
+  transition-delay: 0.3s;
+  transition: all 0.5s; }
+
+/* line 1909, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow.-right > .shaft:before {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg); }
+
+/* line 1914, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow.-right > .shaft:after {
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg); }
+
+/* line 1919, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow > .shaft {
+  background-color: #FFF;
+  display: block;
+  height: 1px;
+  position: relative;
+  transition: all 0.2s;
+  transition-delay: 0;
+  will-change: transform; }
+
+/* line 1929, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow > .shaft:before,
+.wthe-arrow > .shaft:after {
+  background-color: #FFF;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s;
+  transition-delay: 0; }
+
+/* line 1942, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow > .shaft:before {
+  -webkit-transform-origin: top right;
+  transform-origin: top right; }
+
+/* line 1947, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wthe-arrow > .shaft:after {
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right; }
+
+/* line 1952, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow {
+  display: inline-block;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1.25em;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s; }
+
+/* line 1962, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow:hover {
+  color: #999; }
+
+/* line 1966, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow:hover > .wthe-arrow.-left > .shaft {
+  width: 64px;
+  transition-delay: 0.1s;
+  background-color: #999; }
+
+/* line 1972, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow:hover > .wthe-arrow.-left > .shaft:before,
+.wanimated-arrow:hover > .wthe-arrow.-left > .shaft:after {
+  width: 8px;
+  transition-delay: 0.1s;
+  background-color: #999; }
+
+/* line 1979, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow:hover > .wthe-arrow.-left > .shaft:before {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg); }
+
+/* line 1984, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow:hover > .wthe-arrow.-left > .shaft:after {
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg); }
+
+/* line 1989, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow:hover > .main {
+  -webkit-transform: translateX(80px);
+  transform: translateX(80px); }
+
+/* line 1994, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow:hover > .main > .wthe-arrow.-right > .shaft {
+  width: 0;
+  -webkit-transform: translateX(200%);
+  transform: translateX(200%);
+  transition-delay: 0; }
+
+/* line 2001, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow:hover > .main > .wthe-arrow.-right > .shaft:before,
+.wanimated-arrow:hover > .main > .wthe-arrow.-right > .shaft:after {
+  width: 0;
+  transition-delay: 0;
+  transition: all 0.1s; }
+
+/* line 2008, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow:hover > .main > .wthe-arrow.-right > .shaft:before {
+  -webkit-transform: rotate(0);
+  transform: rotate(0); }
+
+/* line 2013, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow:hover > .main > .wthe-arrow.-right > .shaft:after {
+  -webkit-transform: rotate(0);
+  transform: rotate(0); }
+
+/* line 2018, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow > .main {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  align-items: center;
+  transition: all 0.2s; }
+
+/* line 2028, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow > .main > .text {
+  margin: 4px 16px 0 0;
+  line-height: 1; }
+
+/* line 2033, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.wanimated-arrow > .main > .wthe-arrow {
+  position: relative; }
+
+/*========================= white more arrow===========================*/
+/* line 2038, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  letter-spacing: 2.5px; }
+
+/* line 2044, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+footer hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #666;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 2053, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_top {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 50px; }
+
+/* line 2063, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_logo {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  width: 38%;
+  height: auto; }
+
+/* line 2073, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_logo img:nth-child(1) {
+  width: 180px;
+  height: 50px; }
+
+/* line 2078, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_title {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  height: 20px;
+  color: #FFF;
+  padding-left: 15%;
+  margin-top: 12px; }
+
+/* line 2091, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_info {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: #999;
+  width: 62%;
+  line-height: 45px;
+  font-size: 1.4em;
+  letter-spacing: 4px; }
+
+/* line 2106, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_icon {
+  margin-top: 5px;
+  margin-right: 40px; }
+
+/* line 2111, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_icon img {
+  margin-left: 16px;
+  opacity: .4;
+  transition: all 0.4s; }
+
+/* line 2117, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_icon img:hover {
+  opacity: 1; }
+
+/* line 2120, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_link {
+  padding-top: 3px; }
+
+/* line 2123, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_link img {
+  padding-bottom: 3px; }
+
+/* line 2126, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_link a {
+  color: #999;
+  transition: all 0.4s; }
+
+/* line 2131, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_link a:hover {
+  color: #FFF; }
+
+/* line 2135, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_copyright {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  line-height: 45px;
+  font-size: .95em;
+  letter-spacing: 1px; }
+
+/* line 2143, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_copyright a {
+  color: #666; }
+
+/* line 2146, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.footer_copyright span:nth-child(2) {
+  float: right;
+  font-size: 1.5em;
+  letter-spacing: 3px; }
+
+/*=========================footer===========================*/
+/* line 2153, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.hamburger {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 45px;
+  top: 30px;
+  right: 4%;
+  z-index: 900; }
+
+/* line 2163, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.hamburger div {
+  position: relative;
+  width: 40px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #FFF;
+  margin-top: 7px;
+  transition: all 0.3s ease-in-out; }
+
+/* line 2173, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.scrollh-b {
+  position: absolute;
+  width: 40px;
+  height: 45px;
+  top: 18px;
+  right: 5%;
+  z-index: 900; }
+
+/* line 2182, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.scrollh-b div {
+  position: relative;
+  width: 40px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000;
+  margin-top: 7px;
+  transition: all 0.3s ease-in-out; }
+
+/* line 2192, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.scrollh-b.white div {
+  background-color: #FFF; }
+
+/* line 2196, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#toggle {
+  display: none; }
+
+/* line 2200, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#toggle:checked + .hamburger {
+  position: fixed;
+  top: 24px; }
+
+/* line 2205, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#toggle:checked + .hamburger .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px; }
+
+/* line 2211, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#toggle:checked + .hamburger .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -2px; }
+
+/* line 2217, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#toggle:checked + .hamburger .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+
+/* line 2222, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#toggle:checked + .hamburger + .nav1200 {
+  top: 0;
+  opacity: 1; }
+
+/* line 2227, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200 {
+  display: none; }
+
+/* line 2230, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200 hr {
+  position: absolute;
+  top: 90px;
+  height: 1px;
+  opacity: .3;
+  z-index: 200;
+  width: 100vw; }
+
+/* line 2239, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200 .nav-wrapper {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%; }
+
+/* line 2246, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.mobile-nav {
+  height: 100%;
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 199; }
+
+/* line 2260, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.mobile-nav a {
+  margin-top: 1.25em;
+  color: #eee;
+  opacity: 0;
+  text-decoration: none;
+  font-size: 2.3em;
+  letter-spacing: 3px;
+  transition: all 0.1s ease; }
+
+/* line 2270, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.mobile-nav a:first-child {
+  margin-top: 0; }
+
+/* line 2274, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#toggle:checked + .hamburger + .nav1200 .nav-wrapper nav a {
+  opacity: 0.9;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+/* line 2280, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#toggle:checked + .hamburger + .nav1200 .nav-wrapper nav a:hover {
+  opacity: 1;
+  color: white;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
+/* line 2287, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-left {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  width: 40vw;
+  height: 90vh; }
+
+/* line 2303, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-logo {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+/* line 2314, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-icons {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 330px; }
+
+/* line 2326, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-icons a {
+  margin-top: 0 !important; }
+
+/* line 2329, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-icons img {
+  padding: 0 12px; }
+
+/* line 2333, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-icons a img {
+  opacity: .8; }
+
+/* line 2337, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-icons a:hover img {
+  opacity: 1; }
+
+/* line 2341, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav800-icons {
+  display: none; }
+
+/* line 2344, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-lan {
+  display: block;
+  text-align: center;
+  margin-top: 5vh; }
+
+/* line 2349, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-lan a,
+.nav1200-lan {
+  width: 100%;
+  color: #9B9B9B;
+  font-size: 13px;
+  letter-spacing: 2.3px;
+  text-transform: uppercase; }
+
+/* line 2357, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-lan .active a {
+  color: #FFF; }
+
+/* line 2360, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-lan a:hover {
+  color: #FFF; }
+
+/* line 2364, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-right {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  align-items: center;
+  width: 60vw;
+  height: 90vh; }
+
+/* line 2375, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-right li {
+  margin-top: 30px; }
+
+/* line 2379, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-right p {
+  display: inline-block;
+  font-size: 17px;
+  letter-spacing: 3.6px;
+  font-weight: 400; }
+
+/* line 2386, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-right span {
+  font-family: 'Spectral', serif;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 42px;
+  margin-right: 40px;
+  letter-spacing: -.7px; }
+
+/* line 2395, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-right a {
+  color: #9B9B9B;
+  padding-left: 50px;
+  transition: all 0.4s ease; }
+
+/* line 2401, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-right .active a {
+  color: #FFF;
+  padding-left: 0px;
+  transition: all 0.4s ease; }
+
+/* line 2406, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-right .active a::before {
+  display: inline-block;
+  content: '';
+  width: 80px;
+  height: 1px;
+  background-color: #FFF; }
+
+/* line 2413, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-right a:hover {
+  color: #FFF;
+  padding-left: 0px; }
+
+/* line 2418, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-right a::before {
+  display: inline-block;
+  content: '';
+  width: 0px;
+  height: 1px;
+  background-color: #FFF;
+  transition: all 0.4s ease;
+  margin-bottom: 10px;
+  margin-right: 8px; }
+
+/* line 2429, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.nav1200-right a:hover:before {
+  width: 80px;
+  height: 1px;
+  background-color: #FFF; }
+
+/*=========================burger nav===========================*/
+/* line 2436, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 390px;
+  margin-top: 2%;
+  padding-bottom: 9%;
+  margin-bottom: 0px; }
+
+/* line 2446, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-txt {
+  padding-top: 100px;
+  margin-top: 13%;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  transition-delay: .5s;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 2457, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-txt.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 2461, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-content img {
+  width: 100%;
+  margin-top: 35px; }
+
+/* line 2465, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-content h4 {
+  display: block;
+  padding-left: 24%;
+  font-size: 20px;
+  color: #0C2340;
+  letter-spacing: 5px;
+  line-height: 32px;
+  font-weight: 400; }
+
+/* line 2474, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-txt::before {
+  display: inline-block;
+  content: '';
+  width: 80px;
+  height: 1px;
+  margin-bottom: -24px;
+  background-color: #0C2340; }
+
+/* line 2482, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-content p {
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-left: 24%;
+  color: #666; }
+
+/* line 2490, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-left span {
+  font-family: 'Spectral', serif;
+  font-size: 190px;
+  font-weight: 600;
+  color: #F0F0F0;
+  position: absolute;
+  top: -18px;
+  left: 40%;
+  z-index: -1; }
+
+/* line 2500, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-right span {
+  font-family: 'Spectral', serif;
+  font-size: 190px;
+  font-weight: 600;
+  color: #F0F0F0;
+  position: absolute;
+  top: -18px;
+  left: 40%;
+  z-index: -1; }
+
+/* line 2510, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-left {
+  display: inline-block;
+  width: 48%;
+  float: left; }
+
+/* line 2515, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-right {
+  display: inline-block;
+  width: 48%;
+  float: right; }
+
+/* line 2520, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.greybg {
+  background-color: #F0F0F0; }
+
+/* line 2523, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.aboutvideo {
+  width: 70%;
+  height: 100%;
+  padding: 10% 0;
+  margin: 0 auto; }
+
+/* line 2529, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.aboutvideo iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 720px; }
+
+/*=========================about===========================*/
+/* line 2535, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.pagination {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px; }
+
+/* line 2548, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.pagination a, .pagination li {
+  display: inline-block; }
+
+/* line 2551, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.pagination a {
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  padding: 10px 16px;
+  color: #999;
+  margin: 0 6px; }
+
+/* line 2560, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.pagination a:hover {
+  background-color: #CCC;
+  color: #FFF; }
+
+/* line 2564, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.pagination .active a {
+  background-color: #CCC;
+  color: #FFF; }
+
+/*=========================pagnition===========================*/
+/* line 2571, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.food-gallery {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 65px;
+  padding-bottom: 120px;
+  background-color: #F0F0F0; }
+
+/* line 2579, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.food-gallery h2 {
+  font-family: 'Spectral', serif;
+  font-weight: 700;
+  font-size: 54px;
+  padding: 20px 0; }
+
+/* line 2585, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slider {
+  width: 100%;
+  margin: 30px auto; }
+
+/* line 2590, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slick-slide {
+  margin: 0px 40px; }
+
+/* line 2594, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slick-prev {
+  left: 200px !important;
+  z-index: 50; }
+
+/* line 2598, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slick-next {
+  right: 200px !important; }
+
+/* line 2602, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slick-slide img {
+  width: 100%; }
+
+/* line 2606, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important; }
+
+/* line 2612, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2; }
+
+/* line 2617, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slick-active {
+  opacity: 1; }
+
+/* line 2621, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slick-current {
+  opacity: 1; }
+
+/* line 2624, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.counter {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  margin: 0 auto;
+  height: 20px;
+  width: 60px;
+  z-index: 2;
+  text-align: center;
+  letter-spacing: 6px;
+  color: #0C2340;
+  line-height: 21px;
+  font-size: 16px;
+  opacity: 1; }
+
+/* line 2639, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -55px;
+  cursor: pointer; }
+
+/* line 2645, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.prev-arrow {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  left: 11% !important;
+  padding: 22px;
+  z-index: 50; }
+
+/* line 2654, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.prev-arrow:hover {
+  left: 10% !important; }
+
+/* line 2657, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.next-arrow {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 22px;
+  right: 11% !important; }
+
+/* line 2665, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.next-arrow:hover {
+  right: 10% !important; }
+
+/* line 2668, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.variable .prev-arrow img {
+  max-width: 25px; }
+
+/* line 2671, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.variable .next-arrow img {
+  max-width: 25px; }
+
+/*=========================slide gallery===========================*/
+/* line 2676, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.about-txt h2 {
+  position: absolute;
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-size: 48px;
+  left: 0;
+  top: 30px; }
+
+/* line 2684, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.food-bgtxt {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  position: relative;
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-size: 115px;
+  color: #F0F0F0;
+  width: 100%;
+  bottom: -60px;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 2699, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.food-bgtxt.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 2703, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.food-bgtxt.left {
+  text-align: right; }
+
+/*=========================food====================================*/
+/* line 2707, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic h4 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #0C2340;
+  text-align: center; }
+
+/* line 2714, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-tab {
+  text-align: center;
+  width: 100%;
+  margin: 30px auto;
+  color: #999;
+  letter-spacing: 5px; }
+
+/* line 2721, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.tab-li.active a {
+  color: #4A4A4A; }
+
+/* line 2724, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-tab a {
+  color: #999; }
+
+/* line 2727, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-tab li {
+  font-size: 15px;
+  display: inline-block;
+  border-right: 1px solid #999;
+  margin-bottom: 8px;
+  width: 15%;
+  padding-right: 28px;
+  padding-left: 28px; }
+
+/* line 2736, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-tab li:last-child {
+  border-right: 0px solid #999; }
+
+/* line 2740, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.hotel_list {
+  position: relative;
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  width: 100%;
+  min-height: 306px;
+  margin-bottom: 45px;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  text-align: center;
+  transform: translateY(50px);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+/* line 2760, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.hotel_list.hotel-list-three {
+  width: 30%;
+  margin-left: 3%;
+  float: left;
+  align-items: center; }
+
+/* line 2766, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.hotel_list.hotel-list-three:nth-child(1), .hotel_list.hotel-list-three:nth-child(4), .hotel_list.hotel-list-three:nth-child(7) {
+  margin-left: 0px; }
+
+/* line 2769, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.hotel_list .dark-overlay:hover {
+  opacity: 0; }
+
+/* line 2772, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .4;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+/* line 2786, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.hotel_list.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 2790, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.hotel-pic {
+  position: absolute;
+  min-height: 306px;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 306px;
+  z-index: 0; }
+
+/* line 2801, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.hotel-info {
+  position: absolute;
+  letter-spacing: 3px;
+  bottom: 38px;
+  left: 0%;
+  z-index: 2;
+  width: 100%; }
+
+/* line 2809, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.hotel_list.hotel-list-three .hotel-info {
+  bottom: 45%; }
+
+/* line 2812, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-more {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 2; }
+
+/*=========================Traffic list====================================*/
+/* line 2819, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-grey {
+  position: relative;
+  padding-top: 70px; }
+
+/* line 2823, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.container.traffic-where {
+  position: relative;
+  width: 85%;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transform: translateY(50px);
+  opacity: 0; }
+
+/* line 2835, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-where.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 2840, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-where hr {
+  position: absolute;
+  width: 105%;
+  top: -70px;
+  left: -2.5%;
+  z-index: 0; }
+
+/* line 2847, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-grey h4 {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 5px;
+  color: #0C2340;
+  font-weight: 400;
+  margin-bottom: 120px;
+  text-transform: uppercase; }
+
+/* line 2856, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-where h5 {
+  position: absolute;
+  text-align: center;
+  width: 24%;
+  top: -78px;
+  left: 38%;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  z-index: 1;
+  background-color: #F0F0F0; }
+
+/* line 2869, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide {
+  width: 100%;
+  height: auto; }
+
+/* line 2873, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide {
+  margin-bottom: 90px; }
+
+/* line 2876, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide .slick-slide {
+  margin: 0px 20px; }
+
+/* line 2879, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide .slide-arrow {
+  position: absolute;
+  top: 30%;
+  margin-top: -55px;
+  cursor: pointer; }
+
+/* line 2885, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide .prev-arrow {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  left: -7% !important;
+  padding: 22px;
+  z-index: 50; }
+
+/* line 2894, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide .prev-arrow img {
+  max-width: 19px; }
+
+/* line 2897, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide .prev-arrow:hover {
+  left: -8% !important; }
+
+/* line 2900, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide .next-arrow {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 22px;
+  right: -7% !important; }
+
+/* line 2908, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide .next-arrow img {
+  max-width: 19px; }
+
+/* line 2911, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide .next-arrow:hover {
+  right: -8% !important; }
+
+/* line 2914, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide-txt {
+  display: block;
+  width: 100%;
+  padding: 5%;
+  text-align: justify; }
+
+/* line 2920, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide-txt span {
+  color: #9B9B9B;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-weight: 500; }
+
+/* line 2928, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide-txt h3 {
+  font-size: 20px !important;
+  line-height: 26px;
+  letter-spacing: 4px;
+  padding: 5px 0;
+  font-weight: 500; }
+
+/* line 2935, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide-txt p {
+  font-size: 15px !important;
+  line-height: 30px;
+  letter-spacing: 2px;
+  padding: 0px 0;
+  font-weight: 400;
+  color: #666; }
+
+/* line 2943, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-slide-txt p a {
+  color: #666 !important; }
+
+/* line 2946, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-how {
+  width: 100%;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transform: translateY(50px);
+  opacity: 0; }
+
+/* line 2955, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-how.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 2959, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-how h4 {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 5px;
+  color: #0C2340;
+  font-weight: 400;
+  margin-bottom: 70px;
+  text-transform: uppercase; }
+
+/* line 2968, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-how a {
+  color: #000;
+  letter-spacing: 3px; }
+
+/* line 2972, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.traffic-map {
+  position: relative;
+  width: 100%;
+  height: 40vw;
+  margin-bottom: 2%; }
+
+/* line 2978, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+#map {
+  width: 100%;
+  height: 35vw; }
+
+/* line 2982, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.map-info {
+  position: absolute;
+  display: block;
+  width: 66%;
+  padding: 6% 4%;
+  text-align: center;
+  z-index: 50;
+  top: 50%;
+  left: 17%;
+  background-color: #FFF;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transform: translateY(50px);
+  opacity: 0; }
+
+/* line 2999, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.map-info.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 3003, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.map-info h4 {
+  font-size: 24px;
+  letter-spacing: 5px; }
+
+/* line 3007, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.map-info p {
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: #666; }
+
+/* line 3014, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.map-info img {
+  max-width: 134px;
+  margin: 0 auto;
+  width: 100%; }
+
+/*=========================Traffic detail====================================*/
+/* line 3021, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.accordion {
+  width: 55%;
+  margin: 0 auto 100px;
+  border-top: 0px solid #C8C7C7; }
+
+/* line 3026, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.accordion li {
+  border-bottom: 1px solid #C8C7C7;
+  position: relative; }
+
+/* line 3030, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.accordion li p {
+  display: none;
+  padding: 10px 25px 30px;
+  color: #666; }
+
+/* line 3035, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.accordion a {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 3;
+  font-size: 20px;
+  text-indent: 15px;
+  user-select: none; }
+
+/* line 3045, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.accordion a::after {
+  width: 14px;
+  height: 1.5px;
+  background-color: #000;
+  position: absolute;
+  right: 10px;
+  content: " ";
+  top: 29px;
+  transform: rotate(90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* line 3058, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.accordion p {
+  font-size: 15px;
+  line-height: 30px;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-weight: 400; }
+
+/* line 3065, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.accordion span::after {
+  width: 14px;
+  height: 1.5px;
+  background-color: #000;
+  position: absolute;
+  right: 10px;
+  content: " ";
+  top: 29px;
+  transform: rotate(180deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* line 3078, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.accordion a.active:after {
+  transform: rotate(180deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/*=========================accordion====================================*/
+/* line 3087, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-top {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 120px; }
+
+/* line 3096, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-txt {
+  -webkit-transition: all .8s ease-out;
+  -moz-transition: all .8s ease-out;
+  -o-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+  position: relative;
+  width: 30%;
+  text-align: left;
+  padding-right: 5%;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 3108, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-txt.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 3112, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-txt-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-right: 28%; }
+
+/* line 3118, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-top h2 {
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-size: 48px;
+  padding: 0px 0; }
+
+/* line 3124, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-top h4 {
+  letter-spacing: 5px;
+  font-size: 24px;
+  padding-left: 3px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 16%; }
+
+/* line 3132, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-top span {
+  display: block;
+  font-size: 20px;
+  color: #0C2340;
+  letter-spacing: 4px;
+  line-height: 32px;
+  font-weight: 400; }
+
+/* line 3140, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-top p {
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 30px; }
+
+/* line 3145, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-txt p {
+  padding-top: 12px; }
+
+/* line 3148, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-service-incon {
+  width: 73%;
+  margin-left: 5%;
+  text-align: center; }
+
+/* line 3153, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.icon-ul {
+  -webkit-transition: all .8s ease-out;
+  -moz-transition: all .8s ease-out;
+  -o-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+  position: relative;
+  width: 30%;
+  text-align: left;
+  padding-right: 5%;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 3165, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.icon-ul.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 3169, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-service-incon ul {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 80px; }
+
+/* line 3179, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-service-incon li {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: -ms-inline-flex;
+  /* IE10 */
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
+  max-width: 170px;
+  margin-left: 2%;
+  position: relative;
+  text-align: center; }
+
+/* line 3194, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-service-incon span {
+  margin-top: 20px; }
+
+/* line 3197, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-service-incon p {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  width: 100%;
+  text-align: center; }
+
+/* line 3206, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.service-img {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  min-height: 100px;
+  height: auto !important;
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative; }
+
+/* line 3221, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.service-img img {
+  width: 90%;
+  position: absolute;
+  bottom: 0px;
+  left: 5%; }
+
+/* line 3228, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-service-incon ul:nth-child(2) li:nth-child(1) .service-img img, .facility-service-incon ul:nth-child(2) li:nth-child(3) .service-img img {
+  width: 80%;
+  position: absolute;
+  bottom: 0px;
+  left: 11%; }
+
+/* line 3234, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-service-incon ul:nth-child(2) li:nth-child(2) img {
+  -ms-transform: scale(1.28);
+  /* IE 9 */
+  -webkit-transform: scale(1.28);
+  /* Safari 3-8 */
+  transform: scale(1.28); }
+
+/* line 3239, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-service-incon ul:nth-child(2) li:nth-child(3) h3 {
+  left: -20px !important; }
+
+/* line 3242, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-service-incon h3 {
+  font-family: 'Spectral', serif;
+  font-size: 180px;
+  color: #F0F0F0;
+  position: absolute;
+  top: -110px;
+  left: -20px;
+  z-index: -1; }
+
+/*==============facility gallery=================*/
+/* line 3252, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-mobile {
+  display: none !important;
+  text-align: center; }
+
+/* line 3256, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-mobile .slide-arrow {
+  position: absolute;
+  top: 59%;
+  margin-top: -55px;
+  cursor: pointer; }
+
+/* line 3262, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-mobile span {
+  color: #0C2340;
+  line-height: 46px;
+  letter-spacing: 2.4px;
+  font-size: 16px; }
+
+/* line 3268, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-gallery {
+  width: 100%;
+  text-align: left;
+  margin: 0px auto;
+  padding-top: 65px;
+  padding-bottom: 120px;
+  background-color: #F0F0F0;
+  -webkit-transition: all .8s ease-out;
+  -moz-transition: all .8s ease-out;
+  -o-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 3283, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-gallery.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 3287, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-gallery h2 {
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-size: 48px;
+  padding: 5px 0; }
+
+/* line 3293, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-gallery h4 {
+  letter-spacing: 5px;
+  font-size: 24px;
+  padding-left: 3px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 4%; }
+
+/* line 3301, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-container-right {
+  width: 60%;
+  float: right; }
+
+/* line 3305, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-container-right .counter {
+  display: none; }
+
+/* line 3308, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-container-left {
+  width: 100%;
+  float: left;
+  max-width: 1440px; }
+
+/* line 3313, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-nav {
+  color: #000; }
+
+/* line 3316, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-list {
+  display: block;
+  width: 40%;
+  float: left; }
+
+/* line 3321, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-img {
+  display: block;
+  width: 60%;
+  height: 500px;
+  min-height: 450px;
+  padding-top: 2%;
+  overflow: hidden;
+  float: left; }
+
+/* line 3330, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-img img {
+  width: 100%;
+  opacity: 1;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 2s; }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {
+    opacity: 0;
+    transform: scale(1.1); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+/* Standard syntax */
+@keyframes example {
+  from {
+    opacity: 0;
+    transform: scale(1.1); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+/* line 3353, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-list ul {
+  width: 100%; }
+
+/* line 3357, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-list li {
+  width: 100%;
+  height: 45px;
+  font-size: 3em;
+  letter-spacing: 3.5px;
+  padding-left: 20px;
+  color: #9B9B9B;
+  -webkit-transition: all .6s ease-out;
+  -moz-transition: all .6s ease-out;
+  -o-transition: all .6s ease-out;
+  transition: all .6s ease-out; }
+
+/* line 3369, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-list li::before {
+  display: inline-block;
+  position: relative;
+  content: '';
+  width: 0;
+  height: 1px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  background-color: #9B9B9B; }
+
+/* line 3383, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-list li:hover:before {
+  content: '';
+  width: 50px;
+  height: 1px; }
+
+/* line 3388, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+html[lang="en"] .facility-list li::before {
+  margin-right: 22px;
+  margin-bottom: 3px; }
+
+/* line 3392, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-list p {
+  position: relative;
+  display: inline-block;
+  height: 45px;
+  line-height: 30px;
+  padding-bottom: 30px;
+  font-size: 17px;
+  letter-spacing: 3.5px;
+  padding-left: 50px;
+  color: #666;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  transition: all .4s ease-out; }
+
+/* line 3407, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-list p:hover {
+  cursor: pointer;
+  font-size: 20px;
+  color: #0C2340 !important;
+  padding-left: 20px; }
+
+/* line 3413, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-list p::before {
+  position: absolute;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  display: inline;
+  content: '•';
+  width: 6px;
+  height: 15px;
+  top: -5px;
+  left: 0;
+  padding-right: 16px;
+  font-size: 50px;
+  line-height: 38px;
+  color: #666; }
+
+/* line 3430, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-list p:hover:before {
+  color: #0C2340 !important;
+  top: -5px;
+  left: -20px; }
+
+/* line 3436, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.facility-list li:target {
+  cursor: pointer;
+  color: #0C2340;
+  padding-left: 50px; }
+
+/* line 3441, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.tab-content {
+  display: none;
+  width: 100%;
+  background: #ededed;
+  padding: 0px;
+  position: relative; }
+
+/* line 3448, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.tab-content.current {
+  display: block; }
+
+/* line 3451, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+ul.facility-nav li.current {
+  color: #0C2340; }
+
+/* line 3454, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+ul.facility-nav li.current::before {
+  content: '';
+  width: 45px;
+  height: 1px; }
+
+/* line 3459, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+ul.facility-nav li.current p::before {
+  color: #0C2340 !important;
+  top: -5px;
+  left: -20px; }
+
+/* line 3464, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+ul.facility-nav li.current p {
+  font-size: 20px;
+  color: #0C2340 !important;
+  padding-left: 20px; }
+
+/*=========================Facility====================================*/
+/* line 3470, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv {
+  padding-bottom: 12%; }
+
+/* line 3473, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-intro {
+  text-align: center;
+  width: 100%; }
+
+/* line 3477, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-intro h4 {
+  padding-bottom: 20px; }
+
+/* line 3480, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-intro p {
+  font-size: 17px;
+  letter-spacing: 2px;
+  padding: 0 10%;
+  line-height: 30px; }
+
+/* line 3486, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-btn {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 4em 0; }
+
+/* line 3497, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-btn .btn, .reserv-btn .btn-2 {
+  margin: 0px 12px; }
+
+/* line 3500, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn-group p {
+  display: block;
+  color: #999;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin: 0 auto; }
+
+/* line 3510, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn.trip-logo a {
+  background-image: url(/assets/trip-logo-268e807e8ea5445cb5e49c4bc3f88b29d4fb2ef388bb2d330870fbf89fd0c396.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0); }
+
+/* line 3516, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn.trip-logo a:hover {
+  background-image: url(/assets/trip-logo-w-987a6960943add2602043ea15ad5b2a0faf86b1908f2100598c7cadfeeb3158b.svg); }
+
+/* line 3519, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn.book-logo a {
+  background-image: url(/assets/book-logo-f5429fa481ae9bc5336304d83c378e3e6613aca72b84ef404631037edb22c666.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0); }
+
+/* line 3525, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.btn.book-logo a:hover {
+  background-image: url(/assets/book-logo-w-391d9ac66911b6cebfac00038fc5f87a39ae7ef3ba9013c3b0ffb407593dbdda.svg); }
+
+/* line 3529, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-content {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding-top: 2%; }
+
+/* line 3543, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-content:nth-child(even) {
+  flex-direction: row-reverse; }
+
+/* line 3546, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-content2 {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: auto;
+  margin-top: 2%; }
+
+/* line 3560, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-content img, .reserv-content2 img {
+  width: 100%; }
+
+/* line 3563, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-left {
+  display: inline-block;
+  width: 68%;
+  float: left; }
+
+/* line 3568, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-middle {
+  width: 5%;
+  height: 20px; }
+
+/* line 3572, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-right {
+  width: 27%;
+  height: 100%;
+  float: right; }
+
+/* line 3578, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-txt {
+  text-align: left;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 3587, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-txt.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 3591, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.fadetran-img {
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 3599, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.fadetran-img.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 3603, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-txt h4 {
+  display: block;
+  font-size: 24px;
+  color: #0C2340;
+  letter-spacing: 5px;
+  line-height: 32px;
+  font-weight: 400; }
+
+/* line 3611, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-txt p {
+  color: #666;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px; }
+
+/* line 3620, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-bottom1 {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  flex-direction: column;
+  background-image: url(/assets/k-bg-2cd3fd328901d77c3ddaeb48d8efbbe9b3a9371bca09368b1a65af6baec4f8e6.svg);
+  background-position: top right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 3639, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-bottom1.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 3644, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-bottom-txt {
+  text-align: left;
+  width: 70%;
+  padding: 7.5%;
+  margin-bottom: 50px;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 3656, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-bottom-txt.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 3661, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-bottom-txt .btn, .reserv-bottom-txt .btn-2 {
+  margin: 20px 0; }
+
+/* line 3664, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-bottom-txt h4 {
+  display: block;
+  font-size: 20px;
+  color: #0C2340;
+  letter-spacing: 4px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 0px; }
+
+/* line 3673, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-bottom-txt li {
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  border-bottom: 0.5px solid rgba(151, 151, 151, 0.9); }
+
+/* line 3681, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-bottom-txt li a {
+  color: #000; }
+
+/* line 3684, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.blackbg .reserv-bottom-txt li a {
+  color: #FFF; }
+
+/* line 3687, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-bottom-txt li:last-child {
+  border-bottom: 0px solid rgba(151, 151, 151, 0.9);
+  padding-bottom: 12px; }
+
+/* line 3691, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.creditcard {
+  width: 100%; }
+
+/* line 3694, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.creditcard li {
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  border-bottom: 0px solid rgba(151, 151, 151, 0.7); }
+
+/* line 3700, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.creditcard li img {
+  width: 100%;
+  padding-right: 30px; }
+
+/*=========================Reserv list====================================*/
+/* line 3705, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.blackbg {
+  width: 100%;
+  background-color: #111;
+  color: #FFF !important; }
+
+/* line 3710, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.blackbg.inside-page-banner {
+  position: relative;
+  height: 35vh;
+  margin-bottom: 4.5%;
+  z-index: 1; }
+
+/* line 3716, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.blackbg.inside-page-banner h2 {
+  display: block;
+  position: relative;
+  z-index: 99;
+  padding-top: 12%;
+  padding-bottom: 10%; }
+
+/* line 3723, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.blackbg.inside-page-banner .overlay {
+  display: none; }
+
+/* line 3726, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.blackbg h4 {
+  color: #FFF !important; }
+
+/* line 3729, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.blackbg .reserv {
+  padding-bottom: 0%; }
+
+/* line 3732, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.blackbg .light_Banner_container_table.inside-banner {
+  height: 35vh; }
+
+/* line 3735, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-banner {
+  width: 100%;
+  padding: 40px 0; }
+
+/* line 3739, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-detail-txt {
+  width: 100%;
+  padding: 20px 15%;
+  text-align: center;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(50px); }
+
+/* line 3750, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-detail-txt.fade-in {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* line 3754, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-detail-txt h4 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin: 30px auto; }
+
+/* line 3760, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-detail-txt ul {
+  margin: 0 auto; }
+
+/* line 3763, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-detail-txt li {
+  display: inline-block;
+  font-size: 15px;
+  width: 30%;
+  border-right: 1px solid #999;
+  padding: 10px 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-left: 40px; }
+
+/* line 3774, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-detail-txt li:last-child {
+  border-right: 0px solid #999; }
+
+/* line 3777, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.blackbg .reserv-content {
+  flex-direction: column; }
+
+/* line 3780, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-double {
+  display: -webkit-flex;
+  /* Safari */
+  display: -ms-flex;
+  /* IE10 */
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%; }
+
+/* line 3792, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+.reserv-double img {
+  width: 48%; }
+
+/*=========================Reserv detail====================================*/
+@media only screen and (max-width: 2565px) {
+  /* line 3797, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .food-bgtxt {
+    font-size: 185px; }
+
+  /* line 3800, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_txt {
+    width: 36%;
+    top: 26%; }
+
+  /* line 3804, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav-container {
+    padding-left: 0%;
+    padding-right: 0%; }
+
+  /* line 3808, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info {
+    min-height: 350px; }
+
+  /* line 3812, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-pic {
+    min-height: 350px; }
+
+  /* line 3815, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .section4 .container {
+    max-width: 1480px; }
+
+  /* line 3818, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info_date_more {
+    margin-top: 160px; }
+
+  /* line 3821, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .container2 {
+    max-width: 2560px; }
+
+  /* line 3824, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2 {
+    height: 980px; }
+
+  /* line 3827, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_pic {
+    height: 980px; }
+
+  /* line 3829, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-img {
+    height: 600px; }
+
+  /* line 3832, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .prev-arrow {
+    left: 21% !important; }
+
+  /* line 3835, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .prev-arrow:hover {
+    left: 20.5% !important; }
+
+  /* line 3838, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .next-arrow {
+    right: 21% !important; }
+
+  /* line 3840, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .next-arrow:hover {
+    right: 20.5% !important; }
+
+  /* line 3843, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .blackbg.inside-page-banner {
+    min-height: 540px;
+    z-index: 4; } }
+@media only screen and (max-width: 1990px) {
+  /* line 3851, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .food-bgtxt {
+    font-size: 145px; }
+
+  /* line 3854, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav-container {
+    padding-left: 5%;
+    padding-right: 5%; }
+
+  /* line 3858, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light_Banner_container_table_cell span {
+    padding-left: 20%;
+    padding-right: 20%; }
+
+  /* line 3861, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .blackbg.inside-page-banner {
+    min-height: 440px;
+    z-index: 4; } }
+@media only screen and (max-width: 1450px) {
+  /* line 3867, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .food-bgtxt {
+    font-size: 115px; }
+
+  /* line 3870, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav-container {
+    padding-left: 5%;
+    padding-right: 5%; }
+
+  /* line 3874, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info {
+    min-height: 290px; }
+
+  /* line 3877, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-pic {
+    min-height: 290px; }
+
+  /* line 3880, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info_date_more {
+    margin-top: 50px; }
+
+  /* line 3883, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2 {
+    height: 580px; }
+
+  /* line 3886, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_pic {
+    height: 580px; }
+
+  /* line 3888, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_txt {
+    top: 16%;
+    width: 50%; }
+
+  /* line 3892, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light_Banner_container_table_cell span {
+    padding-left: 2%;
+    padding-right: 2%; }
+
+  /* line 3895, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-how {
+    margin-top: 10%; } }
+@media only screen and (max-width: 1200px) {
+  /* line 3900, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light_menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    border-bottom: 1px solid #FFF;
+    z-index: 99; }
+
+  /* line 3910, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light-logo {
+    border-right: 0px solid #FFF;
+    height: 100px; }
+
+  /* line 3915, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light-nav-container {
+    display: none; }
+
+  /* line 3919, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light-icon {
+    display: none; }
+
+  /* line 3923, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .menu-toggle {
+    display: block; }
+
+  /* line 3927, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .navbar_link {
+    display: none; }
+
+  /* line 3931, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .navbar_icon {
+    display: none; }
+
+  /* line 3935, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hamburger {
+    display: block; }
+
+  /* line 3938, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200 {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    top: -120%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out; } }
+@media only screen and (max-width: 1024px) {
+  /* line 3954, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-top {
+    flex-direction: column;
+    margin-bottom: 120px; }
+
+  /* line 3958, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-txt {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 40px; }
+
+  /* line 3965, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-service-incon {
+    width: 100%;
+    text-align: center; }
+
+  /* line 3969, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-txt-bottom {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding-right: 0%; }
+
+  /* line 3975, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-bottom1 {
+    background-image: none; }
+
+  /* line 3978, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-mobile {
+    display: block !important; }
+
+  /* line 3981, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-container-right {
+    width: 100%;
+    float: right; }
+
+  /* line 3985, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-container-right .counter {
+    display: block; }
+
+  /* line 3988, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-container-left {
+    display: none; }
+
+  /* line 3991, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel_list.hotel-list-three:nth-child(odd) {
+    margin-left: 0px; }
+
+  /* line 3994, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel_list.hotel-list-three:nth-child(even) {
+    margin-left: 3%; }
+
+  /* line 3997, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel_list.hotel-list-three {
+    width: 48%;
+    margin-left: 3%;
+    float: left; } }
+@media only screen and (max-width: 830px) {
+  /* line 4004, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-banner.slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 0px auto; }
+
+  /* line 4009, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .mobile-nav {
+    height: 150vh;
+    flex-direction: column; }
+
+  /* line 4013, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .footer_copyright span:nth-child(1) {
+    float: left;
+    width: 50%;
+    line-height: 17px;
+    font-size: .8em; }
+
+  /* line 4019, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .footer_copyright span:nth-child(2) {
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 1.15em; }
+
+  /* line 4025, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  footer {
+    padding-bottom: 40px; }
+
+  /* line 4028, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .footer_top {
+    margin-bottom: 0px; }
+
+  /* line 4031, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-left {
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px auto;
+    width: 100vw;
+    height: 25vh;
+    padding-top: 4%; }
+
+  /* line 4046, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-logo {
+    margin-bottom: 30px; }
+
+  /* line 4050, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-left .nav1200-icons {
+    display: none !important; }
+
+  /* line 4054, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-right {
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 190px; }
+
+  /* line 4067, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav800-icons {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    margin: 0 auto;
+    bottom: 10%;
+    z-index: 88; }
+
+  /* line 4077, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav800-icons img,
+  .nav800-icons a img {
+    padding: 0 12px;
+    opacity: .8; }
+
+  /* line 4083, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav800-icons a:hover img {
+    opacity: 1; }
+
+  /* line 4086, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news_list {
+    flex-direction: column; }
+
+  /* line 4089, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-pic {
+    display: block;
+    height: 300px;
+    width: auto; }
+
+  /* line 4094, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info {
+    display: block;
+    width: 100%;
+    max-height: 320px;
+    margin-top: -4px;
+    border: 0.5px solid rgba(0, 0, 0, 0.6);
+    border-top: 0px solid #000; }
+
+  /* line 4102, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info.white {
+    margin-top: -2px;
+    max-height: 320px;
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    border-top: 0px solid #000; }
+
+  /* line 4108, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .about-left {
+    width: 100%; }
+
+  /* line 4111, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .about-right {
+    width: 100%; }
+
+  /* line 4114, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .prev-arrow {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    left: 10px !important;
+    padding: 22px;
+    z-index: 50; }
+
+  /* line 4123, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .prev-arrow:hover {
+    left: 0px !important; }
+
+  /* line 4126, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .next-arrow {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 22px;
+    right: 10px !important; }
+
+  /* line 4134, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .next-arrow:hover {
+    right: 0px !important; }
+
+  /* line 4137, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .food-bgtxt {
+    text-align: justify !important;
+    font-size: 90px;
+    bottom: 20px; }
+
+  /* line 4142, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-tab li {
+    padding-left: 5px;
+    padding-right: 5px; }
+
+  /* line 4146, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-list {
+    display: block;
+    width: 100%;
+    float: left; }
+
+  /* line 4151, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    min-height: 450px;
+    float: left; }
+
+  /* line 4158, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-left {
+    width: 100%; }
+
+  /* line 4161, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-right {
+    width: 100%; }
+
+  /* line 4164, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-txt {
+    padding-left: 0%; }
+
+  /* line 4167, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-content {
+    flex-direction: column;
+    margin-top: 12%; }
+
+  /* line 4171, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-content:nth-child(even) {
+    flex-direction: column; }
+
+  /* line 4174, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-content2 {
+    flex-direction: column;
+    margin-top: 12%; }
+
+  /* line 4178, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-detail-txt {
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 2% 0%; }
+
+  /* line 4183, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-txt-left h4 {
+    font-size: 20px; }
+
+  /* line 4186, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-txt-left p {
+    font-size: 15px; }
+
+  /* line 4189, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-counter {
+    right: 10px; }
+
+  /* line 4192, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-txt-left {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 30px; }
+
+  /* line 4197, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-txt-right {
+    width: 100%; }
+
+  /* line 4200, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-btn-left {
+    width: 100%;
+    justify-content: center; }
+
+  /* line 4204, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-btn-right {
+    width: 100%;
+    justify-content: space-between; }
+
+  /* line 4208, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-detail-btn {
+    flex-direction: column-reverse;
+    padding: 2% 0%;
+    margin-top: 40px; }
+
+  /* line 4213, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-btn-left .btn-2 {
+    width: 100%;
+    margin: 1em 0; }
+
+  /* line 4217, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-btn-right .btn-2 {
+    margin: 0 0;
+    width: 48%; }
+
+  /* line 4221, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-banner .slick-slide img {
+    height: 100%;
+    width: 100vw; }
+
+  /* line 4225, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-content.container {
+    width: 100vw; }
+
+  /* line 4228, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-banner .slide-arrow {
+    top: 55%; }
+
+  /* line 4231, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-banner .prev-arrow {
+    left: -2% !important; }
+
+  /* line 4234, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-banner .prev-arrow:hover {
+    left: -3% !important; }
+
+  /* line 4237, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-banner .next-arrow {
+    right: -2% !important; }
+
+  /* line 4240, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-banner .next-arrow:hover {
+    right: -3% !important; }
+
+  /* line 4243, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-slide .slick-slide {
+    margin: 0px 0px; }
+
+  /* line 4246, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-where h5 {
+    width: 55%;
+    top: -78px;
+    left: 22%;
+    font-size: 18px;
+    letter-spacing: 4px; }
+
+  /* line 4253, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-detail-txt li {
+    display: inline-block;
+    width: 100%;
+    padding: 0; }
+
+  /* line 4258, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-detail-txt li:first-child {
+    border-right: 0px; }
+
+  /* line 4261, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-slide-txt h3 {
+    font-size: 18px !important;
+    line-height: 26px;
+    letter-spacing: 3px;
+    padding: 3px 0;
+    font-weight: 500; }
+
+  /* line 4268, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-slide-txt p, .traffic-slide-txt p a {
+    font-size: 14.5px !important;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    padding: 0px 0;
+    font-weight: 400;
+    color: #666 !important; } }
+@media only screen and (max-width: 600px) {
+  /* line 4279, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .aboutvideo iframe {
+    width: 100%;
+    height: 100%;
+    min-height: auto; }
+
+  /* line 4285, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel_list.hotel-list-three {
+    width: 100%;
+    margin-left: 0% !important;
+    float: left; }
+
+  /* line 4291, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .inside-page-banner {
+    margin-bottom: 40px; }
+
+  /* line 4294, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .blackbg.inside-page-banner {
+    height: 200px; }
+
+  /* line 4297, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .news-btn {
+    font-size: 13px; }
+
+  /* line 4300, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-pic {
+    height: 200px;
+    min-height: 200px;
+    width: auto; }
+
+  /* line 4305, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light_menu {
+    height: 80px; }
+
+  /* line 4308, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light-logo {
+    height: 80px; }
+
+  /* line 4311, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hamburger {
+    top: 22px; }
+
+  /* line 4314, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .accordion {
+    width: 100%; }
+
+  /* line 4317, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light_Banner_container_table_cell h2 {
+    font-size: 40px;
+    line-height: 50px; }
+
+  /* line 4321, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .blackbg .light_Banner_container_table_cell h2 {
+    margin-top: 80px; }
+
+  /* line 4324, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light_Banner_container_table_cell h3 img {
+    padding-top: 30px;
+    width: 96px; }
+
+  /* line 4328, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light_Banner_container_table_cell span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    top: 15vh; }
+
+  /* line 4334, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .banner-arrow {
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    margin: 0 auto;
+    top: 16vh; }
+
+  /* line 4349, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content1_img_container_row {
+    margin-left: 5%; }
+
+  /* line 4352, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content1_img_container img {
+    width: 44%;
+    margin-right: 5%; }
+
+  /* line 4356, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .section4 {
+    padding-bottom: 20px; }
+
+  /* line 4359, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .section4 .container {
+    width: 90%; }
+
+  /* line 4362, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .section4 .traffic {
+    width: 100%; }
+
+  /* line 4365, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info_date_more {
+    margin-top: 25px; }
+
+  /* line 4368, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_txt h4 {
+    letter-spacing: 3.5px; }
+
+  /* line 4371, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content3 {
+    flex-direction: column;
+    align-items: center; }
+
+  /* line 4375, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content3_txt_container h2 {
+    font-size: 40px;
+    line-height: 50px; }
+
+  /* line 4379, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_txt h2 {
+    font-size: 36px;
+    line-height: 40px; }
+
+  /* line 4383, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content3_txt_container h2 {
+    font-size: 30px;
+    line-height: 40px; }
+
+  /* line 4387, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .section4 h2 {
+    font-size: 30px;
+    line-height: 40px; }
+
+  /* line 4391, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info h3 {
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-bottom: 12px; }
+
+  /* line 4396, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info p {
+    font-size: 15px;
+    letter-spacing: 1px; }
+
+  /* line 4400, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info_date_more .date {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-top: 5px; }
+
+  /* line 4405, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .section4 .more-arrow_container-w {
+    margin-left: 40px; }
+
+  /* line 4408, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .mobile-nav {
+    height: 100vh;
+    flex-direction: column; }
+
+  /* line 4412, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-right a::before {
+    margin-right: -8px; }
+
+  /* line 4415, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .nav1200-right a::before {
+    margin-right: 8px; }
+
+  /* line 4418, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .nav1200-right span {
+    margin-right: 0px; }
+
+  /* line 4421, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .food-bgtxt span {
+    font-family: "Spectral", serif !important;
+    font-size: 38px;
+    letter-spacing: 0.1px !important; }
+
+  /* line 4426, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200 hr {
+    position: absolute;
+    top: 70px; }
+
+  /* line 4430, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  #toggle:checked + .hamburger {
+    position: fixed;
+    top: 14px; }
+
+  /* line 4434, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-left {
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px auto;
+    width: 100vw;
+    height: 8vh;
+    padding-top: 0%; }
+
+  /* line 4449, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-logo {
+    display: none; }
+
+  /* line 4453, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-left .nav1200-icons {
+    display: none !important; }
+
+  /* line 4457, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-right {
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    height: 60vh;
+    padding-bottom: 5px; }
+
+  /* line 4470, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-right li {
+    margin-top: 3px;
+    text-align: center; }
+
+  /* line 4475, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-right span {
+    display: none; }
+
+  /* line 4478, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .nav1200-right li {
+    text-align: center; }
+
+  /* line 4481, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .nav1200-right span {
+    display: inline-block;
+    font-size: 28px; }
+
+  /* line 4485, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .nav1200-right p {
+    display: none; }
+
+  /* line 4488, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-right a {
+    padding-left: 0; }
+
+  /* line 4491, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-right .active a {
+    color: #FFF;
+    padding-left: 0px;
+    transition: all 0.4s ease; }
+
+  /* line 4496, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-right .active a::before {
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #FFF; }
+
+  /* line 4503, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav1200-right a:hover:before {
+    width: 30px;
+    height: 1px;
+    background-color: #FFF; }
+
+  /* line 4509, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav800-icons {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    margin: 0 auto;
+    bottom: 12%;
+    z-index: 88; }
+
+  /* line 4519, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav800-icons img,
+  .nav800-icons a img {
+    padding: 0 12px;
+    opacity: .8; }
+
+  /* line 4525, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .nav800-icons a:hover img {
+    opacity: 1; }
+
+  /* line 4528, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content1 {
+    margin-top: 10%;
+    height: auto; }
+
+  /* line 4532, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2 {
+    flex-direction: column;
+    height: auto;
+    overflow: hidden; }
+
+  /* line 4537, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_txt {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0px; }
+
+  /* line 4543, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_txt h2, .content2_txt h4 {
+    padding: 0px 5%;
+    margin: 0 auto; }
+
+  /* line 4547, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_txt p {
+    padding-bottom: 38px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto; }
+
+  /* line 4553, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content2_pic {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 265px; }
+
+  /* line 4560, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .overlay_light {
+    display: none; }
+
+  /* line 4563, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content3 {
+    padding-top: 68px;
+    padding-bottom: 20px; }
+
+  /* line 4567, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content3_pic {
+    width: 100%; }
+
+  /* line 4570, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content3_txt {
+    width: 100%;
+    padding-top: 5%; }
+
+  /* line 4574, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content3_txt_container {
+    padding-left: 0; }
+
+  /* line 4577, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .footer_top {
+    flex-direction: column; }
+
+  /* line 4580, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .footer_logo {
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 40px; }
+
+  /* line 4590, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .footer_logo img {
+    width: 100%;
+    max-width: 176px; }
+
+  /* line 4594, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .footer_title {
+    display: none; }
+
+  /* line 4597, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .footer_info {
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    font-size: 1.1em;
+    justify-content: space-between; }
+
+  /* line 4608, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .footer_icon img {
+    margin-left: 0px;
+    margin-right: 15px; }
+
+  /* line 4613, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .about-content {
+    min-height: 390px;
+    padding-top: 12%; }
+
+  /* line 4617, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .about-txt {
+    padding-top: 50px;
+    margin-top: 3%; }
+
+  /* line 4621, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .about-txt h2 {
+    position: absolute;
+    font-family: 'Spectral', serif;
+    font-weight: 600;
+    font-size: 38px;
+    left: 0;
+    top: 0px; }
+
+  /* line 4629, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .about-left span {
+    left: 20%;
+    top: -92px; }
+
+  /* line 4633, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .about-right span {
+    left: 20%;
+    top: -92px; }
+
+  /* line 4637, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .about-content h4 {
+    padding-left: 0;
+    font-size: 18px; }
+
+  /* line 4641, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .about-txt::before {
+    display: none; }
+
+  /* line 4644, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .about-content p {
+    padding-left: 0;
+    padding-top: 8px; }
+
+  /* line 4648, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .greybg {
+    margin-top: 40px; }
+
+  /* line 4651, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .aboutvideo {
+    width: 70%;
+    height: 100%;
+    padding: 70px 0; }
+
+  /* line 4657, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-city .hotel-list-three {
+    width: 90%; }
+
+  /* line 4660, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info {
+    max-height: 400px;
+    min-height: 258px;
+    padding: 20px 20px 0px 20px; }
+
+  /* line 4665, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .news-info.white {
+    max-height: 400px;
+    min-height: 258px;
+    padding: 20px 20px 0px 20px; }
+
+  /* line 4670, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .pagination a {
+    margin: 0 5.5px; }
+
+  /* line 4673, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .prev-arrow {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    left: 0px !important;
+    padding: 22px;
+    z-index: 50; }
+
+  /* line 4682, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .prev-arrow:hover {
+    left: 20px !important; }
+
+  /* line 4685, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .next-arrow {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 22px;
+    right: 0px !important; }
+
+  /* line 4693, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .next-arrow:hover {
+    right: 20px !important; }
+
+  /* line 4696, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .food-bgtxt {
+    text-align: justify !important;
+    font-size: 45px;
+    margin-bottom: -88px;
+    letter-spacing: -.8px; }
+
+  /* line 4702, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .food-gallery {
+    margin-top: 40px;
+    padding-top: 48px;
+    padding-bottom: 80px; }
+
+  /* line 4707, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .food-gallery h2 {
+    font-size: 40px;
+    padding: 0px 0; }
+
+  /* line 4711, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic {
+    width: 100vw; }
+
+  /* line 4714, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-top h2 {
+    font-size: 36px;
+    line-height: 36px; }
+
+  /* line 4718, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-top h4 {
+    font-size: 20px; }
+
+  /* line 4722, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel_list {
+    min-height: 446px;
+    margin-bottom: 5px; }
+
+  /* line 4726, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel_list.hotel-list-three {
+    min-height: 320px;
+    margin-left: 15px !important;
+    margin-bottom: 7.5px; }
+
+  /* line 4731, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel_list.hotel-list-three .hotel-info a {
+    color: #FFF; }
+
+  /* line 4734, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel_list.hotel-list-three .hotel-info h3 {
+    padding-top: 20px; }
+
+  /* line 4737, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel-info a {
+    color: #4A4A4A; }
+
+  /* line 4740, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .dark-overlay {
+    height: 306px; }
+
+  /* line 4743, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-gallery .container {
+    width: 100%; }
+
+  /* line 4746, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-gallery .container h2, .facility-gallery .container h4 {
+    padding: 0 7.5%;
+    margin-bottom: 0%; }
+
+  /* line 4750, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-gallery h2 {
+    font-size: 38px; }
+
+  /* line 4753, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-gallery h4 {
+    font-size: 20px; }
+
+  /* line 4756, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-service-incon {
+    width: 100%;
+    text-align: center;
+    margin-left: 0; }
+
+  /* line 4761, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px; }
+
+  /* line 4766, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel-info p {
+    font-size: 15px;
+    padding: 5% auto !important; }
+
+  /* line 4770, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel-info {
+    margin-top: 30px;
+    height: 120px;
+    bottom: 0px; }
+
+  /* line 4775, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .hotel_list.hotel-list-three .hotel-info {
+    bottom: 25%; }
+
+  /* line 4778, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-city .traffic-more {
+    position: absolute;
+    bottom: 155px;
+    right: 5px; }
+
+  /* line 4783, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-top {
+    flex-direction: column;
+    margin-bottom: 0px; }
+
+  /* line 4787, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-more {
+    position: absolute;
+    bottom: 120px;
+    right: 30px;
+    z-index: 2; }
+
+  /* line 4793, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-tab {
+    width: 90%;
+    overflow: hidden; }
+
+  /* line 4797, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-tab li {
+    width: 30%;
+    padding-left: 5px;
+    padding-right: 5px; }
+
+  /* line 4802, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-tab ul {
+    position: relative;
+    width: 110%;
+    left: -16px; }
+
+  /* line 4808, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv.container {
+    width: 100%; }
+
+  /* line 4811, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-content {
+    margin-top: 2%;
+    margin-bottom: 12%; }
+
+  /* line 4815, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-intro p {
+    font-size: 15px;
+    padding: 10px 10%; }
+
+  /* line 4819, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-content2 {
+    margin-top: 13%;
+    margin-bottom: 12%; }
+
+  /* line 4823, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-btn {
+    flex-direction: column;
+    padding: 1em 0; }
+
+  /* line 4827, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-detail-txt {
+    width: 100%;
+    padding: 0px 15%; }
+
+  /* line 4831, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-banner:first-child {
+    width: 100%;
+    padding: 0px 0; }
+
+  /* line 4835, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .btn-group {
+    width: 100%;
+    margin: 10px auto; }
+
+  /* line 4839, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-btn .btn {
+    margin: 0px auto; }
+
+  /* line 4842, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-right {
+    width: 85%;
+    margin: 0px 7.5%;
+    float: none; }
+
+  /* line 4847, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-txt p {
+    padding-top: 20px;
+    padding-bottom: 25px; }
+
+  /* line 4851, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-bottom-txt {
+    text-align: left;
+    width: 100%;
+    padding: 7.5%;
+    margin-bottom: 50px; }
+
+  /* line 4857, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .reserv-bottom-txt .btn {
+    margin: 20px 0;
+    width: 100%; }
+
+  /* line 4861, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .traffic-tab li {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px; }
+
+  /* line 4866, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .traffic-tab ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    left: 0px; }
+
+  /* line 4874, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .traffic-tab {
+    letter-spacing: 0.5px; }
+
+  /* line 4877, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  #map {
+    display: none; }
+
+  /* line 4880, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .map-info {
+    width: 95%;
+    padding: 4%;
+    top: 10%;
+    left: 2.5%; }
+
+  /* line 4886, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .map-info h4 {
+    font-size: 20px; }
+
+  /* line 4889, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .map-info p {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 26px; }
+
+  /* line 4894, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-map {
+    position: relative;
+    width: 100%;
+    height: 46vw;
+    margin-bottom: 105px; }
+
+  /* line 4900, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-how h4 {
+    text-align: center;
+    font-size: 24px;
+    font-size: 700; }
+
+  /* line 4906, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-slide .prev-arrow, .traffic-slide .prev-arrow:hover {
+    left: -3% !important; }
+
+  /* line 4909, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .traffic-slide .next-arrow, .traffic-slide .next-arrow:hover {
+    right: -3% !important; }
+
+  /* line 4912, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .variable .slick-slide img {
+    width: 100vw; }
+
+  /* line 4915, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .variable .slick-slide {
+    margin: 0px 0px; }
+
+  /* line 4918, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-mobile .slick-slide img {
+    width: 100vw; }
+
+  /* line 4921, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-mobile .slick-slide {
+    margin: 0px 0px; } }
+@media only screen and (max-width: 480px) {
+  /* line 4926, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-service-incon ul {
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0px; }
+
+  /* line 4937, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-service-incon li {
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: -ms-inline-flex;
+    /* IE10 */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0%;
+    position: relative;
+    margin: 22% auto; }
+
+  /* line 4950, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-service-incon li:nth-child(2) h3 {
+    left: -12px;
+    z-index: -1; }
+
+  /* line 4954, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-service-incon li:nth-child(3) h3 {
+    left: -14px;
+    z-index: -1; }
+
+  /* line 4958, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-service-incon ul:nth-child(2) li:nth-child(2) h3 {
+    left: -16px !important;
+    z-index: -1; }
+
+  /* line 4962, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .facility-service-incon ul:nth-child(2) li:nth-child(3) h3 {
+    left: -16px !important;
+    z-index: -1; }
+
+  /* line 4966, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .facility-service-incon li {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    margin-left: 0%;
+    position: relative;
+    margin: 22% auto; } }
+@media only screen and (max-width: 320px) {
+  /* line 4980, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .food-bgtxt {
+    letter-spacing: -3.4px; }
+
+  /* line 4983, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  html[lang="en"] .content2_pic {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 310px; } }
+@media only screen and (max-width: 1000px) {
+  /* line 4993, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .light_kbg {
+    display: none; }
+
+  /* line 4996, /home/app/kindness/tmp/build-155845239822255/vendor/assets/stylesheets/designer/style.scss */
+  .content1 {
+    margin-top: 10%;
+    height: auto; } }

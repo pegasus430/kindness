@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <h4 class="page-title">頁面 SEO 設定</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card">
+                <div class="card-body">
+                  <div class="col-12">
+                      <div class="page-title-box">
+                          <div class="page-title-right">
+                            <%= link_to new_admin_page_path, :class => "btn btn-sm btn-primary btn-outline-secondary" do %>
+                              <i class="fa fa-plus" aria-hidden="true"></i> 新增
+                            <% end %>
+                          </div>
+                      </div>
+                  </div>
+                    <div class="table-responsive-sm">
+                        <table class="table table-striped table-centered mb-0">
+                            <thead>
+                              <tr>
+                              <th>名稱</th>
+                              <th>path</th>
+                              <th>SEO title</th>
+                              <th>SEO keyword</th>
+                              <th>SEO description</th>
+                              <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                             <% @pages.each_with_index do |page, index| %>
+                                <tr>
+                                  <td><%= page.name %></td>
+                                  <td><%= page.path %></td>
+                                  <td><%= page.title %></td>
+                                  <td><%= page.keyword %></td>
+                                  <td><%= page.description %></td>
+                                  <td class="table-action">
+                                    <%= link_to "", edit_admin_page_path(page), class: "mdi mdi-pencil" %>
+                                    <%= link_to "", admin_page_path(page),  class: "mdi mdi-delete", method: :delete,  data: { confirm: "你確定要刪除嗎?" }   %>
+                                  </td>
+                                </tr>
+                              <% end %>
+                            </tbody>
+                        </table>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+  </div>

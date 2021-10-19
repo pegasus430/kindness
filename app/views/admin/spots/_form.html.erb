@@ -1,0 +1,139 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <% if current_user.admin? %>
+            <li class="breadcrumb-item">
+              <%=link_to "分館列表", admin_stores_path %>
+            </li>
+          <% end %>
+          <li class="breadcrumb-item">
+            <%= link_to "#{@store.title}-週邊景點", admin_store_spots_path(@store) %>
+          </li>
+          <li class="breadcrumb-item active">
+            <%= @spot.title %>
+          </li>
+        </ol>
+      </div>
+      <h4 class="page-title"><%= title %></h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <%= form_for([:admin, @store, @spot], :html => {class: 'needs-validation', :novalidate => 'novalidate'}) do |f| %>
+          <p class="text-muted font-14">
+            <i class="mdi mdi-flag-variant-outline"></i> 圖片建議：最佳尺寸：1600px X 1067px 最小尺寸：930px X 620px
+          </p>
+          <p class="text-muted font-14"> <i class="mdi mdi-flag-variant-outline"></i> 圖片編輯：上傳後請點擊“編輯”，裁切最適畫面。
+          </p>
+          <%= render partial: "admin/images/upload", :locals => 
+          {
+            url: "/admin/spots/#{@spot&.id}/images",
+            name: 'spots',
+            :w => 1600, :h => 1067
+          } 
+        %>
+          <hr>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 景點分類</label>            
+            <div class="form-check">
+                <input 
+                    name="spots[tags][]" 
+                    type="radio"
+                    id="closing_date_hotspot"
+                    value="hotspot" 
+                    <%= (@spot.tags.empty? || @spot.tags.include?('hotspot')) ? 'checked' : '' %> 
+                  >
+                <label class="form-check-label" for="closing_date_hotspot">
+                  找景點
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input 
+                    name="spots[tags][]" 
+                    type="radio"
+                    id="closing_date_shopping"
+                    value="shopping" 
+                    <%= @spot.tags.include?('shopping') ? 'checked' : '' %> 
+                  >
+                <label class="form-check-label" for="closing_date_shopping">
+                  找商圈
+                </label>
+              </div>
+          </div>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 名稱(中文)</label>
+            <%= f.text_field :title, name: 'spots[title_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @spot.title_zh_tw %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label><span class="text-danger">*</span> 地址(中文)</label>
+            <%= f.text_field :address, name: 'spots[address_zh_tw]',label: '名稱', class: 'form-control', :required => true, value: @spot.address_zh_tw %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label>營業時間(中文)</label>
+            <%= f.text_field :service_hours, name: 'spots[service_hours_zh_tw]',label: '名稱', class: 'form-control', :required => false, value: @spot.service_hours_zh_tw  %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label> 電話(中文)</label>
+            <%= f.text_field :tel, name: 'spots[tel_zh_tw]',label: '名稱', class: 'form-control', :required => false, value: @spot.tel_zh_tw  %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="grade_name"><span class="text-danger">*</span> 名稱(英文)</label>
+            <%= f.text_field :title, name: 'spots[title_en]',label: '名稱', class: 'form-control', :required => true, value: @spot.title_en  %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="grade_name"><span class="text-danger">*</span> 地址(英文)</label>
+            <%= f.text_field :address, name: 'spots[address_en]',label: '名稱', class: 'form-control', :required => true, value: @spot.address_en  %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label> 營業時間(英文)：</label>
+            <%= f.text_field :service_hours, name: 'spots[service_hours_en]',label: '名稱', class: 'form-control', :required => false, value: @spot.service_hours_en %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label> 電話(英文)：</label>
+            <%= f.text_field :tel, name: 'spots[tel_en]',label: '名稱', class: 'form-control', :required => false, value: @spot.tel_en %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <ul class="list-inline wizard mb-0">
+            <li class="previous list-inline-item">
+              <%= link_to :back, :class => "btn btn-default" do %>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> 返回
+              <% end %>
+            </li>
+            <li class="next list-inline-item float-right">
+              <%= f.submit "送出", class: "btn btn-primary pull-right" %>
+            </li>
+          </ul>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

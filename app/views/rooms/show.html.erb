@@ -1,0 +1,150 @@
+<% content_for :page_javascript do %>
+  <%= javascript_include_tag 'designer/black' %>
+  <script type="text/javascript">
+    $(function(){    
+      $('body').css('background-color', '#111');
+    
+    });
+  </script>>
+<% end %>
+<!--slider-->
+<section class="inside-page-banner blackbg">
+  <div class="light_Banner_container_table inside-banner">
+    <div class="light_Banner_container_table_cell">
+      <h2>Room</h2>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="inside-banner-contain"></div>
+</section>
+<!--content-->
+<section class="blackbg">
+  <div class="container traffic">
+    <div class="reserv-intro">
+      <h4><%= @room.title %></h4>
+      <%= @room.spec.to_s.html_safe %>
+    </div>
+  </div>
+  <!-- container-->
+</section>
+<section class="blackbg">
+  <div class="reserv container">
+    <div class="reserv-content clearfix">
+      <div class="reserv-banner fadetran-img">
+        <img class="mask2" src="<%= image_url @room.cover %>" alt="">
+      </div>
+      <div class="reserv-detail-txt">
+        <h4><%= t('landing.rooms.goods_facilities') %></h4>
+        <ul>
+          <% if I18n.locale.to_s == 'zh-TW' %>
+            <li>
+              <% @room.equipment_left_zh_tw.each_with_index do |val, index| %>
+                ◆ <%= val%><br>
+              <% end %>
+            </li>
+            <li>
+              <% @room.equipment_right_zh_tw.each_with_index do |val, index| %>
+                ◆ <%= val%> <br>
+              <% end %>
+            </li>
+          <% else %>
+            <li>
+              <% @room.equipment_left_en.each_with_index do |val, index| %>
+                ◆ <%= val%><br>
+              <% end %>
+            </li>
+            <li>
+              <% @room.equipment_right_en.each_with_index do |val, index| %>
+                ◆ <%= val%> <br>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+      <% @room.images.drop(1).in_groups_of(3, false).each_with_index do |img, index|  %>
+        <div class="reserv-banner fadetran-img">
+          <% if img[0] != nil%>
+            <img class="mask2" src="<%= image_url img[0].src.url(:crop) %>" alt="">
+          <% end %>
+        </div>
+        <div class="reserv-double">
+          <% if img[1] != nil%>
+            <img class="mask2" src="<%= image_url img[1].src.url(:crop) %>" alt="">
+          <% end %>
+          <% if img[2] != nil%>
+            <img class="mask2" src="<%= image_url img[2].src.url(:crop) %>" alt="">
+          <% end %>
+        </div>
+      <% end %>
+      <!-- old 
+      <div class="reserv-banner fadetran-img">
+        <% if @room.images[1] != nil%>
+          <img class="mask2" src="<%= image_url @room.images[1].src.url(:crop) %>" alt="">
+        <% end %>
+      </div>
+      <div class="reserv-double">
+        <% if @room.images[2] != nil%>
+          <img class="mask2" src="<%= image_url @room.images[2].src.url(:crop) %>" alt="">
+        <% end %>
+        <% if @room.images[3] != nil%>
+          <img class="mask2" src="<%= image_url @room.images[3].src.url(:crop) %>" alt="">
+        <% end %>
+      </div>
+      <div class="reserv-banner fadetran-img">
+        <% if @room.images[4] != nil%>
+          <img class="mask2" src="<%= image_url @room.images[4].src.url(:crop) %>" alt="">
+        <% end %>
+      </div>
+      <div class="reserv-double">
+        <% if @room.images[5] != nil%>
+          <img class="mask2" src="<%= image_url @room.images[5].src.url(:crop) %>" alt="">
+        <% end %>
+        <% if @room.images[6] != nil%>
+          <img class="mask2" src="<%= image_url @room.images[6].src.url(:crop) %>" alt="">
+        <% end %>
+      </div>
+      -->
+    </div>
+    <!--reserv content-->
+  </div>
+  <!--contentainer-->
+</section>
+<section class="greybg clearfix reserv-bottom1 blackbg">
+  <div class="container-full">
+    <div class="reserv-bottom-txt">
+      <h4><%= t('reservations.accommodation_information')%></h4>
+      <div class="reserv-info-list">
+        <ul>
+          <li><%= @store.reservation_information.to_s.html_safe %></li>
+          <li><%= @store.reservation_check_in_time.to_s.html_safe%></li>
+          <li><%= @store.reservation_contact_info.to_s.html_safe %></li>
+          <li><%= t('reservations.credit_card_service')%></li>
+        </ul>
+      </div>
+      <div class="creditcard">
+        <% if I18n.locale.to_s == 'zh-TW'%>
+          <ul>
+            <% ["visa","master","jcb","linkcard","union"].each do |card| %>
+              <% if @credit_cards_zh_tw.include?(card) %>
+                <li><img src="<%= image_url "#{card}.png"%>" alt=""></li>
+              <% end %>
+            <% end %>
+          </ul>
+        <% end %>
+        <% if I18n.locale.to_s == 'en'%>
+          <ul>
+            <% ["visa","master","jcb","linkcard","union"].each do |card| %>
+              <% if @credit_cards_en.include?(card) %>
+                <li><img src="<%= image_url "#{card}.png"%>" alt=""></li>
+              <% end %>
+            <% end %>
+          </ul>
+        <% end %>
+      </div>
+      <div class="btn-2">
+        <a href="<%= reserv_path(@store)%>"><%= t('back_room')%></a>
+      </div>
+    </div>
+  </div>
+</section>

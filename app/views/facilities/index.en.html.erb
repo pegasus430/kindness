@@ -1,0 +1,131 @@
+<% content_for :page_javascript do %>
+  <%= javascript_include_tag 'designer/facility' %>
+  <%= javascript_include_tag 'designer/service' %>
+<% end %>
+<!--slider-->
+<section class="inside-page-banner">
+  <div class="light_Banner_container_table inside-banner">
+    <div class="light_Banner_container_table_cell">
+      <h2>Facility</h2>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="inside-banner-contain" style="background-image: url(<%= image_url 'facility.jpg'%>);"></div>
+</section>
+<!--content-->
+<section id="inside-section" class="container clearfix">
+  <div class="facility-top">
+    <div class="facility-txt">
+      <h2>Service</h2>
+      <div class="facility-txt-bottom">
+        <span>Good service facilities make you experience a pleasant stay.</span>
+        <p>Sharing a good stay with you, whether you are going to the counter to consult a tourist attraction or to enjoy a delicious meal at the restaurant, we look forward to seeing you at the moment of staying in Cambridge.</p>
+      </div>
+    </div>
+    <div class="facility-service-incon">
+      <ul class="icon-ul">
+        <li>
+          <h3>01</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon1.svg'%>" alt=""></div>
+          <span>Free Wi-Fi</span>
+          <p>Free high-speed Internet connection hotel-wide</p>
+        </li>
+        <li>
+          <h3>02</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon2.svg'%>" alt=""></div>
+          <span>Business Desktop</span>
+          <p>Computer provided for simple inquiry search and business operation</p>
+        </li>
+        <li>
+          <h3>03</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon3.svg'%>" alt=""></div>
+          <span>Reception Service</span>
+          <p>24-hour staff accessible for your convenience</p>
+        </li>
+      </ul>
+      <ul class="icon-ul">
+        <li>
+          <h3>04</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon4.svg'%>" alt=""></div>
+          <span style="letter-spacing: 0;">Morning Call</span>
+          <p>Do not worry to sleep through your itinerary</p>
+        </li>
+        <li>
+          <h3>05</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon5.svg'%>" alt=""></div>
+          <span>Taxi</span>
+          <p> Let us help you to tell the driver where you would like to visit</p>
+        </li>
+        <li>
+          <h3>06</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon6.svg'%>" alt=""></div>
+          <span>Travel Advisory</span>
+          <p>Feel free to ask us how to make your trip more fun</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="facility-gallery clearfix">
+  <div class="container">
+    <h2>Facility</h2>
+    <div class="facility-container-left">
+      <div class="facility-list">
+        <ul class="facility-nav">
+          <li class="tab-link current" data-tab="tab-1">
+            <p>Restaurant</p>
+          </li>
+          <li class="tab-link" data-tab="tab-2">
+            <p>Lounge bar (Limited)</p>
+          </li>
+          <li class="tab-link" data-tab="tab-3">
+            <p>Reading Area</p>
+          </li>
+          <li class="tab-link" data-tab="tab-4">
+            <p>Bike Rentals</p>
+          </li>
+          <li class="tab-link" data-tab="tab-5">
+            <p>Parking lot (Limited)</p>
+          </li>
+          <li class="tab-link" data-tab="tab-6">
+            <p>Self-Service Laundry Room</p>
+          </li>
+          <li class="tab-link" data-tab="tab-7">
+            <p>Hanging ironing machine</p>
+          </li>
+          <li class="tab-link" data-tab="tab-8">
+            <p>RO Water dispenser</p>
+          </li>
+          <li class="tab-link" data-tab="tab-9">
+            <p>Baby bedding sets</p>
+          </li>
+        </ul>
+      </div>
+     <div class="facility-img">
+        <div id="tab-1" class="tab-content current"><img src="<%= image_url 'Facility-01.jpg'%>" alt=""></div>
+        <div id="tab-2" class="tab-content"><img src="<%= image_url 'Facility-02.jpg'%>" alt=""></div>
+        <div id="tab-3" class="tab-content"><img src="<%= image_url 'Facility-03.jpg'%>" alt=""></div>
+        <div id="tab-4" class="tab-content"><img src="<%= image_url 'Facility-04.jpg'%>" alt=""></div>
+        <div id="tab-5" class="tab-content"><img src="<%= image_url 'Facility-05.jpg'%>" alt=""></div>
+        <div id="tab-6" class="tab-content"><img src="<%= image_url 'Facility-06.jpg'%>" alt=""></div>
+        <div id="tab-7" class="tab-content"><img src="<%= image_url 'Facility-07.jpg'%>" alt=""></div>
+        <div id="tab-8" class="tab-content"><img src="<%= image_url 'Facility-08.jpg'%>" alt=""></div>
+        <div id="tab-9" class="tab-content"><img src="<%= image_url 'Facility-09.jpg'%>" alt=""></div>
+      </div>
+    </div>
+    <div class="facility-container-right">
+      <div class="facility-mobile slider">
+        <div><span>Restaurant</span><img src="<%= image_url 'Facility-01.jpg'%>" alt=""></div>
+        <div><span>Lounge bar (Limited)</span><img src="<%= image_url 'Facility-02.jpg'%>" alt=""></div>
+        <div><span>Reading Area</span><img src="<%= image_url 'Facility-03.jpg'%>" alt=""></div>
+        <div><span>Bike Rental</span><img src="<%= image_url 'Facility-04.jpg'%>" alt=""></div>
+        <div><span>Parking lot (Limited)</span><img src="<%= image_url 'Facility-05.jpg'%>" alt=""></div>
+        <div><span>Self-Service Laundry Room</span><img src="<%= image_url 'Facility-06.jpg'%>" alt=""></div>
+        <div><span>Hanging ironing machine</span><img src="<%= image_url 'Facility-07.jpg'%>" alt=""></div>
+        <div><span>RO Water dispenser</span><img src="<%= image_url 'Facility-08.jpg'%>" alt=""></div>
+        <div><span>Baby bedding sets</span><img src="<%= image_url 'Facility-09.jpg'%>" alt=""></div>
+      </div>
+      <div class="counter"></div>
+    </div>
+  </div>
+</section>

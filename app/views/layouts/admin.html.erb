@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>後台-康橋商旅 </title>
+        <meta name="description" content="後台-康橋商旅" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="康橋商旅後台管理系統" name="description" />
+        <link rel="icon" type="image/png" sizes="32x32" href="<%= image_url 'kindness-icon.png'%>">
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag  'admin/application', media: 'all', 'data-turbolinks-track': 'reload' %>
+       <%= javascript_include_tag 'admin/application', 'data-turbolinks-track': 'reload' %>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="left-side-menu">
+                <div class="slimscroll-menu">                    
+                    <%= link_to admin_root_path, :class => "logo text-center" do %>
+                        <span class="logo-lg">
+                            <%= image_tag 'logo.svg', height: 38, width: 150 %>
+                        </span>
+                        <span class="logo-sm">
+                            <%= image_tag 'logo.svg', height: 16, width: 150 %>
+                        </span>
+                     <% end %>
+                    <%= render 'admin/layouts/menu'%>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="content-page">
+                <div class="content">
+                    <%= render 'admin/layouts/topbar'%>
+                    <%= render 'layouts/messages'%>
+                    <div class="container-fluid">
+                        <%= yield%>
+                    </div>
+                </div>
+                <%= render 'admin/layouts/footer'%>
+            </div>
+        </div>
+       
+        
+        <%= yield :page_javascript %>
+    </body>
+</html>

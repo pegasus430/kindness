@@ -1,0 +1,91 @@
+<!--slider-->
+<section class="inside-page-banner">
+  <div class="light_Banner_container_table inside-banner">
+    <div class="light_Banner_container_table_cell">
+      <h2>Reservation</h2>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="inside-banner-contain" style="background-image: url(<%= image_url 'reservation-booking-page.jpg'%>);"></div>
+</section>
+<!--content-->
+<section>
+  <div class="container traffic">
+    <div class="reserv-intro">
+      <h4><%= @store.title.to_s %></h4>
+      <%= @store.desc.to_s.html_safe %>
+    </div>
+    <% if I18n.locale.to_s == 'zh-TW'%>
+      <div class="reserv-btn">
+        <div class="btn-group">
+          <div class="btn">
+            <%= link_to '四方通行線上訂房', @setting.easytravel_url, target: '_blank'%>
+          </div>
+          <p>本訂房系統與四方通行合作</p>
+        </div>
+        <div class="btn-group">
+          <div class="btn trip-logo">
+            <%= link_to @setting.tripadvisor_url, target: '_blank' do %>
+              #
+            </div>
+          <% end %>
+          <p></p>
+        </div>
+      </div>
+    <% else %>
+      <div class="reserv-btn">
+        <div class="btn-group">
+          <div class="btn book-logo">
+            <%= link_to @setting.booking_url, target: '_blank' do %>
+              #
+            </div>
+          <% end %>
+        </div>
+        <div class="btn-group">
+          <div class="btn trip-logo">
+            <%= link_to @setting.tripadvisor_en_url, target: '_blank' do %>
+              #
+            </div>
+          <% end %>
+          <p></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <!-- container-->
+</section>
+<section class="reserv container">
+  <!--reserv content-->
+  <% @rooms.each_with_index do |room, index| %>
+    <div class="reserv-content clearfix">
+      <div class="reserv-left fadetran-img">
+        <img class="mask2" src="<%= room.main_image %>" alt="">
+      </div>
+      <div class="reserv-middle"></div>
+      <div class="reserv-right">
+        <div class="reserv-txt">
+          <h4><%= room.title %></h4>
+          <%= room.desc.to_s.html_safe %>
+          <div class="more-arrow_container-w">
+            <a class='animated-arrow' href='<%= reserv_room_path(room.store_id, room)%>'>
+              <span class='the-arrow -left'>
+                <span class='shaft'></span>
+              </span>
+              <span class='main'>
+                <span class='text'>
+                  MORE
+                </span>
+                <span class='the-arrow -right'>
+                  <span class='shaft'></span>
+                </span>
+              </span>
+            </a>
+          </div>
+          <!--more-arrow-->
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <!--reserv2 content-->
+</section>
+<%= render partial: "reservs/reservations_information" %>

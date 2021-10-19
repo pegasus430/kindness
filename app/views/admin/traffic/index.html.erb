@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <% if current_user.admin? %>
+            <li class="breadcrumb-item">
+              <%=link_to "分館列表", admin_stores_path %>
+            </li>
+          <% end %>
+          <li class="breadcrumb-item active">
+            <%= "#{@store.title}交通方式" %>
+          </li>
+        </ol>
+      </div>
+      <h4 class="page-title">交通方式</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="col-12">
+          <div class="page-title-box">
+            <div class="page-title-right">
+              <%= link_to new_admin_store_traffic_path(@store), :class => "btn btn-sm btn-primary btn-outline-secondary" do %>
+                <i class="fa fa-plus" aria-hidden="true"></i> 新增交通資訊
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive-sm">
+          <form id="seqForm" name="seqForm">
+            <table class="table table-centered mb-0">
+              <thead>
+                <td>方式</td>
+                <th></th>
+              </thead>
+              <tbody class="rows">
+                <% @traffics.each_with_index do |traffic, index| %>
+                  <tr class="item">
+                    <td>
+                      <%= traffic.title_zh_tw %> |  <%= traffic.title_en %>
+                    </td>                    
+                    <td class="table-action">
+                      <%= link_to "修改", edit_admin_store_traffic_path(@store, traffic), class: "mdi mdi-pencil" %> | 
+                      <%= link_to "刪除", admin_store_traffic_path(@store, traffic),  class: "mdi mdi-delete", method: :delete,  data: { confirm: "你確定要刪除嗎?" }   %>
+                    </td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </form>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-md-7">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

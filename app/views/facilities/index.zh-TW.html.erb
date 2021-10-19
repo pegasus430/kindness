@@ -1,0 +1,116 @@
+<% content_for :page_javascript do %>
+  <%= javascript_include_tag 'designer/facility' %>
+  <%= javascript_include_tag 'designer/service' %>
+<% end %>
+<!--slider-->
+<section class="inside-page-banner">
+  <div class="light_Banner_container_table inside-banner">
+    <div class="light_Banner_container_table_cell">
+      <h2>Facility</h2>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="inside-banner-contain" style="background-image: url(<%= image_url 'facility.jpg'%>);"></div>
+</section>
+<!--content-->
+<section id="inside-section" class="container clearfix">
+  <div class="facility-top">
+    <div class="facility-txt">
+      <h2>Service</h2>
+      <h4>服務內容</h4>
+      <div class="facility-txt-bottom">
+        <span>良好的服務設施 <br>
+          使你體驗愉悅的住宿時光</span>
+        <p>與你分享美好的住宿時光，無論是到櫃檯諮詢旅遊景點，或是至餐廳享受美味餐飲，我們期待你在入住康橋的時刻，能一直感受到珍貴的瞬間。</p>
+      </div>
+    </div>
+    <div class="facility-service-incon">
+      <ul class="icon-ul">
+        <li>
+          <h3>01</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon1.svg'%>" alt=""></div>
+          <span>免費WIFI</span>
+          <p>全館皆無線上網</p>
+        </li>
+        <li>
+          <h3>02</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon2.svg'%>" alt=""></div>
+          <span>商務電腦</span>
+          <p>查詢資料、商務辦公</p>
+        </li>
+        <li>
+          <h3>03</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon3.svg'%>" alt=""></div>
+          <span>總機服務</span>
+          <p>24小時總機服務</p>
+        </li>
+      </ul>
+      <ul class="icon-ul">
+        <li>
+          <h3>04</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon4.svg'%>" alt=""></div>
+          <span style="letter-spacing: 0;">Morning Call</span>
+          <p>不用擔心睡過頭</p>
+        </li>
+        <li>
+          <h3>05</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon5.svg'%>" alt=""></div>
+          <span>代叫計程車</span>
+          <p>告訴司機想去哪裡玩</p>
+        </li>
+        <li>
+          <h3 style="left:-38px;">06</h3>
+          <div class="service-img"><img src="<%= image_url 'sevice-icon6.svg'%>" alt=""></div>
+          <span>旅遊諮詢</span>
+          <p>吃喝玩樂問我們吧！</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="facility-gallery clearfix">
+  <div class="container">
+    <h2>Facility</h2>
+    <h4>館內設施</h4>
+    <div class="facility-container-left">
+      <div class="facility-list">
+        <ul class="facility-nav">
+            <li class="tab-link current" data-tab="tab-1"><p>餐廳</p></li>
+                        <li class="tab-link" data-tab="tab-2"><p>小酒吧（特定分館設施）</p></li>
+                        <li class="tab-link" data-tab="tab-3"><p>書報閱讀區</p></li>
+                        <li class="tab-link" data-tab="tab-4"><p>腳踏車</p></li>
+                        <li class="tab-link" data-tab="tab-5"><p>停車場 (車位有限)</p></li>
+                        <li class="tab-link" data-tab="tab-6"><p>自助式洗烘衣機</p></li>
+                        <li class="tab-link" data-tab="tab-7"><p>直立式掛燙機</p></li>
+                        <li class="tab-link" data-tab="tab-8"><p>純淨飲水機</p></li>
+                        <li class="tab-link" data-tab="tab-9"><p>嬰兒床組</p></li>
+        </ul>
+      </div>
+     <div class="facility-img">
+        <div id="tab-1" class="tab-content current"><img src="<%= image_url 'Facility-01.jpg'%>" alt=""></div>
+        <div id="tab-2" class="tab-content"><img src="<%= image_url 'Facility-02.jpg'%>" alt=""></div>
+        <div id="tab-3" class="tab-content"><img src="<%= image_url 'Facility-03.jpg'%>" alt=""></div>
+        <div id="tab-4" class="tab-content"><img src="<%= image_url 'Facility-04.jpg'%>" alt=""></div>
+        <div id="tab-5" class="tab-content"><img src="<%= image_url 'Facility-05.jpg'%>" alt=""></div>
+        <div id="tab-6" class="tab-content"><img src="<%= image_url 'Facility-06.jpg'%>" alt=""></div>
+        <div id="tab-7" class="tab-content"><img src="<%= image_url 'Facility-07.jpg'%>" alt=""></div>
+        <div id="tab-8" class="tab-content"><img src="<%= image_url 'Facility-08.jpg'%>" alt=""></div>
+        <div id="tab-9" class="tab-content"><img src="<%= image_url 'Facility-09.jpg'%>" alt=""></div>
+      </div>
+    </div>
+    <div class="facility-container-right">
+      <div class="facility-mobile slider">
+        <div><span>餐廳</span><img src="<%= image_url 'Facility-01.jpg'%>" alt=""></div>
+        <div><span>小酒吧（特定分館設施）</span><img src="<%= image_url 'Facility-02.jpg'%>" alt=""></div>
+        <div><span>書報閱讀區</span><img src="<%= image_url 'Facility-03.jpg'%>" alt=""></div>
+        <div><span>腳踏車</span><img src="<%= image_url 'Facility-04.jpg'%>" alt=""></div>
+        <div><span>停車場 (車位有限)</span><img src="<%= image_url 'Facility-05.jpg'%>" alt=""></div>
+        <div><span>自助式洗烘衣機</span><img src="<%= image_url 'Facility-06.jpg'%>" alt=""></div>
+        <div><span>直立式掛燙機</span><img src="<%= image_url 'Facility-07.jpg'%>" alt=""></div>
+        <div><span>純淨飲水機</span><img src="<%= image_url 'Facility-08.jpg'%>" alt=""></div>
+        <div><span>嬰兒床組</span><img src="<%= image_url 'Facility-09.jpg'%>" alt=""></div>
+      </div>
+      <div class="counter"></div>
+    </div>
+  </div>
+</section>

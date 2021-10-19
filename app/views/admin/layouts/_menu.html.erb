@@ -1,0 +1,59 @@
+<ul class="metismenu side-nav">
+  <% if current_user.admin? %>
+    <li class="side-nav-title side-nav-item">設定</li>
+    <li class="side-nav-item <%= active_link_to_class(admin_stores_path, active: :inclusive)%>">
+      <%= active_link_to admin_stores_path, :class => "side-nav-link " do %>
+        <i class="dripicons-store"></i>
+        <span> 分館管理 </span>
+      <% end %>
+    </li>
+    <li class="side-nav-item <%= active_link_to_class(admin_setting_path, active: :inclusive)%>">
+      <%= active_link_to admin_setting_path, :class => "side-nav-link" do %>
+        <i class="dripicons-gear"></i>
+        <span> 全站設定 </span>
+      <% end %>
+    </li>
+    <li class="side-nav-title side-nav-item">內容管理</li>
+    <li class="side-nav-item <%= active_link_to_class(admin_banners_path, active: :inclusive)%>">
+      <%= active_link_to admin_banners_path, :class => "side-nav-link" do %>
+        <i class="dripicons-scale"></i>
+        <span> 首頁設定 </span>
+      <% end %>
+    </li>
+    <li class="side-nav-item <%= active_link_to_class(admin_news_index_path, active: :inclusive)%>">
+      <%= active_link_to admin_news_index_path, :class => "side-nav-link" do %>
+        <i class="dripicons-document-edit"></i>
+        <span> 最新消息 </span>
+      <% end %>
+    </li>
+    <li class="side-nav-item <%= active_link_to_class(admin_food_index_path, active: :inclusive)%>">
+      <%= active_link_to admin_food_index_path, :class => "side-nav-link" do %>
+        <i class="dripicons-cutlery"></i>
+        <span> 餐飲料理 </span>
+      <% end %>
+    </li>
+  <% end %>
+  <% if if current_user.hotel? %>
+    <li class="side-nav-title side-nav-item"> <%= Store.first.title %> - 分館設定</li>
+    <li class="side-nav-item <%= active_link_to_class(admin_store_spots_path(Store.first), active: :inclusive)%>">
+      <%= active_link_to admin_store_spots_path(Store.first), :class => "side-nav-link" do %>
+        <i class="dripicons-camera"></i>
+        <span> 週邊景點 </span>
+      <% end %>
+    </li>
+    <%# if current_user.hotel? %>
+    <li class="side-nav-item <%= active_link_to_class(admin_store_rooms_path(Store.first), active: :inclusive)%>">
+      <%= active_link_to admin_store_rooms_path(Store.first), :class => "side-nav-link" do %>
+        <i class="dripicons-home"></i>
+        <span> 房型管理 </span>
+      <% end %>
+    </li>
+    <li class="side-nav-item <%= active_link_to_class(admin_store_traffic_index_path(Store.first), active: :inclusive)%>">
+      <%= active_link_to admin_store_traffic_index_path(Store.first), :class => "side-nav-link" do %>
+        <i class="dripicons-location"></i>
+        <span> 交通資訊 </span>
+      <% end %>
+    </li>
+  <% end %>
+<% end %>
+</ul>

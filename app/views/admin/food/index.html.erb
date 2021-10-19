@@ -1,0 +1,85 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+      </div>
+      <h4 class="page-title">餐點料理</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="col-12">
+          <div class="page-title-box">
+            <div class="page-title-right">
+                   <!-- 
+                <a href="<%= food_index_path%>" class="btn btn-info pull-right" target="_blank">前台檢視</a>
+         
+              <%= link_to new_admin_food_path, :class => "btn btn-sm btn-primary btn-outline-secondary" do %>
+                <i class="fa fa-plus" aria-hidden="true"></i> 新增餐點
+              <% end %>
+               -->
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive-sm">
+          <table class="table table-centered mb-0">
+            <thead>
+              <td>封面圖</td>
+              <td>名稱</td>
+              <td></td>
+            </thead>
+            <tbody class="rows">
+              <% @foods.each_with_index do |food, index| %>
+                <tr class="item">
+                  <td>
+                    <%=image_tag food.cover(type: :thumb) %>
+                  </td>
+                  <td>
+                    中文: <%= food.title_zh_tw %><br/>
+                    英文: <%= food.title_en %>
+                  </td>
+                  <td class="table-action">
+                    <%= link_to "修改", edit_admin_food_path(food), class: "mdi mdi-pencil" %>
+                    <!-- 
+                      <%= link_to "刪除", admin_food_path(food),  class: "mdi mdi-delete", method: :delete,  data: { confirm: "你確定要刪除嗎?" }   %>
+                       -->
+                  </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="table-responsive-sm">
+          <%= form_tag admin_food_images_path, method: 'PUT' do %>
+            <p class="text-muted font-14">
+              <i class="mdi mdi-flag-variant-outline"></i> 圖片建議：最佳尺寸：956px X 606px。上傳後請點擊“編輯”，裁切最適畫面。
+            </p>
+            <%= render partial: "admin/images/upload", :locals => 
+          {
+            url: "/admin/food_images/#{@food&.id}/images",
+            name: 'food_images',
+            :w => 956, :h => 606
+          } 
+        %>
+            <ul class="list-inline wizard mb-0">
+              <li class="previous list-inline-item">
+              </li>
+              <li class="next list-inline-item float-right">
+                <%= submit_tag "儲存", class: "btn btn-primary"  %>
+              </li>
+            </ul>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

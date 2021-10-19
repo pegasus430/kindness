@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* Slider */
+/* line 3, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-loading .slick-list {
+  background: #fff url(/ajax-loader.gif) center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url(/fonts/slick.eot);
+  src: url(/fonts/slick.eot?#iefix) format("embedded-opentype"), url(/fonts/slick.woff) format("woff"), url(/fonts/slick.ttf) format("truetype"), url(/fonts/slick.svg#slick) format("svg"); }
+/* Arrows */
+/* line 19, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent; }
+
+/* line 44, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent; }
+
+/* line 53, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1; }
+
+/* line 60, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25; }
+
+/* line 66, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 80, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-prev {
+  left: -25px; }
+
+/* line 84, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto; }
+
+/* line 89, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-prev:before {
+  content: '←'; }
+
+/* line 93, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+[dir='rtl'] .slick-prev:before {
+  content: '→'; }
+
+/* line 98, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-next {
+  right: -25px; }
+
+/* line 102, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px; }
+
+/* line 107, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-next:before {
+  content: '→'; }
+
+/* line 111, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+[dir='rtl'] .slick-next:before {
+  content: '←'; }
+
+/* Dots */
+/* line 117, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; }
+
+/* line 122, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center; }
+
+/* line 137, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer; }
+
+/* line 150, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent; }
+
+/* line 168, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none; }
+
+/* line 173, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1; }
+
+/* line 178, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 200, /home/ubuntu/Workspace/kindness/vendor/assets/stylesheets/designer/slick-theme.scss */
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black; }

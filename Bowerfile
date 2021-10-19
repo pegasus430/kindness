@@ -1,0 +1,15 @@
+# A sample Bowerfile
+# Check out https://github.com/42dev/bower-rails#ruby-dsl-configuration for more options
+
+# asset 'bootstrap'
+
+
+
+
+asset 'sortable', github: 'RubaXa/Sortable'
+asset 'vue'
+asset 'cropperjs'
+
+
+
+

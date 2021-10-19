@@ -1,0 +1,40 @@
+<section class="greybg clearfix reserv-bottom1">
+  <div class="container-full">
+    <div class="reserv-bottom-txt">
+      <h4><%= t('reservations.accommodation_information')%></h4>
+      <div class="reserv-info-list">
+        <ul>
+          <li><%= @store.reservation_information.to_s.html_safe %></li>
+          <li><%= @store.reservation_check_in_time.to_s.html_safe%></li>
+          <li><%= @store.reservation_contact_info.to_s.html_safe %></li>
+          <li><%= t('reservations.credit_card_service')%></li>
+        </ul>
+      </div>
+      <div class="creditcard">
+        <% if I18n.locale.to_s == 'zh-TW'%>
+          <ul>
+            <% ["visa","master","jcb","linkcard","union"].each do |card| %>
+              <% if @credit_cards_zh_tw.include?(card) %>
+                <li><img src="<%= image_url "#{card}.png"%>" alt=""></li>
+              <% end %>
+            <% end %>
+          </ul>
+        <% end %>
+        <% if I18n.locale.to_s == 'en'%>
+          <ul>
+            <% ["visa","master","jcb","linkcard","union"].each do |card| %>
+              <% if @credit_cards_en.include?(card) %>
+                <li><img src="<%= image_url "#{card}.png"%>" alt=""></li>
+              <% end %>
+            <% end %>
+          </ul>
+        <% end %>
+      </div>
+      <!-- 
+      <div class="btn">
+        <a href="<%= reservs_path %>"><%= t('back_reserv')%></a>
+      </div>
+       -->
+    </div>
+  </div>
+</section>

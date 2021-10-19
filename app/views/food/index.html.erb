@@ -1,0 +1,82 @@
+<!--slider-->
+<section class="inside-page-banner">
+  <div class="light_Banner_container_table inside-banner">
+    <div class="light_Banner_container_table_cell">
+      <h2>Food & Beverages</h2>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="inside-banner-contain" style="background-image: url(<%= image_url 'food-n-Beverages.jpg'%>);"></div>
+</section>
+<!--content-->
+<section id="inside-section" class="container clearfix">
+  <div class="about-content clearfix">
+    <div class="about-left">
+      <div class="about-txt">
+        <h4><%= @breakfast.title %></h4>
+        <h2>Breakfast</h2>
+        <%= @breakfast.desc.to_s.html_safe %>
+      </div>
+    </div>
+    <div class="about-right fadetran-img">
+      <%= image_tag @breakfast.cover , class: 'mask2' %>
+    </div>
+  </div>
+  <!--about content-->
+  <div class="food-bgtxt">
+    <span>Kindness Day</span>
+  </div>
+  <div class="about-content clearfix">
+    <div class="about-left fadetran-img">
+      <%= image_tag @snak_bar.cover , class: 'mask2' %>
+    </div>
+    <div class="about-right">
+      <div class="about-txt">
+        <h4><%= @snak_bar.title %></h4>
+        <h2>Snack bar</h2>
+        <%= @snak_bar.desc.to_s.html_safe %>
+      </div>
+    </div>
+  </div>
+  <!--about content-->
+  <div class="about-content clearfix">
+    <div class="about-left">
+      <div class="about-txt">
+        <h4><%= @supper.title %></h4>
+        <h2>Supper</h2>
+        <%= @supper.desc.to_s.html_safe %>
+      </div>
+    </div>
+    <div class="about-right fadetran-img">
+     <%= image_tag @supper.cover , class: 'mask2' %>
+    </div>
+  </div>
+  <!--about content-->
+  <div class="food-bgtxt left">
+    <span>Kindness Night</span>
+  </div>
+  <div class="about-content clearfix">
+    <div class="about-left fadetran-img">
+      <%= image_tag @bar.cover , class: 'mask2' %>
+    </div>
+    <div class="about-right">
+      <div class="about-txt">
+        <h4><%= @bar.title %></h4>
+        <h2>Bar</h2>
+        <%= @bar.desc.to_s.html_safe %>
+      </div>
+    </div>
+  </div>
+  <!--about content-->
+</section>
+<section class="food-gallery">
+  <h2>Gallery</h2>
+  <div class="variable slider">
+    <% @food_images.each_with_index do |image, index| %>
+      <div>
+        <a href="#"><%=image_tag image.src.url(:crop) %></a>
+      </div>
+    <% end %>
+  </div>
+  <div class="counter"> </div>
+</section>

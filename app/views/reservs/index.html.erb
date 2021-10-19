@@ -1,0 +1,55 @@
+    <!--slider-->
+<section class="inside-page-banner">
+  <div class="light_Banner_container_table inside-banner">
+    <div class="light_Banner_container_table_cell">
+      <h2>Location</h2>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="inside-banner-contain" style="background-image: url(<%= image_url 'hotel-list-page.jpg'%>);"></div>
+</section>
+<!--content-->
+<section id="section4" class="section4">
+  <div class="container traffic">
+    <h4><%= t('branch') %></h4>
+    <div class="traffic-tab">
+      <ul>
+        <% @regions.each_with_index do |region, index| %>
+          <li class="tab-li <%= @q.region_id_eq ==  region.id.to_i ? 'active' : ''%>">
+            <a href="<%=reservs_path(q:{ region_id_eq: region.id.to_i})%>">
+            <%= I18n.locale.to_s == 'zh-TW' ? region.title : region.title_en %>
+          </a>
+          </li>
+        <% end %>    
+      </ul>
+    </div>
+    <div class="traffic-city">
+      <% @stores.each_with_index do |store, index| %>
+        <div class="hotel_list hotel-list-three">
+          <a href="<%= reserv_path(store)%>">
+            <div class="dark-overlay"></div>
+          </a>
+          <div class="hotel-pic" style="background-image: url(<%= store.cover%>);"></div>
+          <div class="hotel-info">
+            <h3><a href="<%= reserv_path(store)%>"><%= store.title %></a></h3>
+          </div>
+        </div>
+      <% end %>
+      
+      </div>
+      <!--hotel-list-->
+      <%= will_paginate @stores, renderer: @custom_paginate_renderer %>
+      <!-- 
+      <div class="pagination">
+        <ul>
+          <li class="active">
+            <a href="#" id="">1</a>
+          </li>
+        </ul>
+      </div> 
+    -->
+    </div>
+    <!--traffic city-->
+  </div>
+  <!--traffic container-->
+</section>

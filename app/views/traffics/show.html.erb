@@ -1,0 +1,330 @@
+<!--slider-->
+<section class="inside-page-banner">
+    <div class="light_Banner_container_table inside-banner">
+        <div class="light_Banner_container_table_cell">
+            <h2>
+                <%= t('traffics.title') %>
+            </h2>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="inside-banner-contain" style="background-image: url(<%= image_url 'traffic-list-page.jpg'%>);"></div>
+</section>
+<!--content-->
+<section id="inside-section" class="container clearfix">
+    <div class="traffic-map">
+        <div id="map"></div>
+        <div class="map-info">
+            <h4>
+                <%= @store.title %>
+            </h4>
+            <p>
+                <%= @store.address %>
+            </p>
+            <a target="_blank" href="https://www.google.com/maps/place/<%= @store.address %>">
+                <img src="<%= image_url 'Google-map.svg'%>" alt=""></a>
+        </div>
+    </div>
+    <div class="traffic-how">
+        <h4>-
+            <%= t('traffics.how_to_arrive')%> -</h4>
+        <ul class="accordion">
+            <% @traffics.each_with_index do |traffic, index| %>
+            <li>
+                <span></span><a>
+                    <%= traffic.title %></a>
+                <%= traffic.description.html_safe %>
+            </li>
+            <% end %>
+        </ul>
+        <!-- / accordion -->
+    </div>
+</section>
+<section class="greybg clearfix traffic-grey">
+    <div class="container-full">
+        <h4>-
+            <%= t('traffics.tourist_attraction')%> -</h4>
+        <div class="container traffic-where">
+            <h5>
+                <%= t('traffics.hot_spot')%>
+            </h5>
+            <hr>
+            <div class="traffic-slide slider">
+                <% @hotspots.each_with_index do |spot, index| %>
+                <div>
+                    <img src="<%= spot.cover%>">
+                    <div class="traffic-slide-txt">
+                        <span>
+                            <%= index + 1 %></span>
+                        <h3>
+                            <%= spot.title%>
+                        </h3>
+                        <p>
+                            <%= spot.address%><br>
+                            <% if spot.service_hours %>
+                            <%= t('traffics.service_hours') %>：
+                            <%= spot.service_hours %> <br>
+                            <% end %>
+                            <% if spot.tel %>
+                            <%= t('traffics.tel')%>：
+                            <%= spot.tel %>
+                            <% end %>
+                        </p>
+                    </div>
+                </div>
+                <% end %>
+            </div>
+            <!--slider-->
+        </div>
+        <!--container-->
+        <div class="container traffic-where">
+            <h5>
+                <%= t('traffics.shopping_district')%>
+            </h5>
+            <hr>
+            <div class="traffic-slide slider">
+                <% @shoppings.each_with_index do |spot, index| %>
+                <div>
+                    <img src="<%= spot.cover%>">
+                    <div class="traffic-slide-txt">
+                        <span>
+                            <%= index + 1 %></span>
+                        <h3>
+                            <%= spot.title%>
+                        </h3>
+                        <p>
+                            <%= spot.address%><br>
+                            <% if spot.service_hours %>
+                            <%= t('traffics.service_hours') %>：
+                            <%=spot.service_hours%> <br>
+                            <% end %>
+                            <% if spot.tel %>
+                            <%= t('traffics.tel')%>：
+                            <%= spot.tel%>
+                            <% end %>
+                        </p>
+                    </div>
+                </div>
+                <% end %>
+            </div>
+            <!--slider-->
+            <!-- 
+      <div class="btn">
+        <a href="<%= traffics_path %>"><%= t('back_store')%></a>
+      </div>
+      -->
+        </div>
+    </div>
+    <!--container-->
+</section>
+<% content_for :page_javascript do %>
+<script>
+// When the window has finished loading create our google map below
+google.maps.event.addDomListener(window, 'load', init);
+
+function init() {
+
+    var geocoder = new google.maps.Geocoder();
+
+    geocoder.geocode({
+        'address': '<%= @store.address_zh_tw%>'
+    }, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+
+            var mapOptions = {
+                zoom: 17,
+                center: results[0].geometry.location,
+                disableDefaultUI: true,
+                styles: [{
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#e9e9e9"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#f5f5f5"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 29
+                            },
+                            {
+                                "weight": 0.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 18
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#f5f5f5"
+                            },
+                            {
+                                "lightness": 21
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#dedede"
+                            },
+                            {
+                                "lightness": 21
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                                "saturation": 36
+                            },
+                            {
+                                "color": "#333333"
+                            },
+                            {
+                                "lightness": 40
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.icon",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#f2f2f2"
+                            },
+                            {
+                                "lightness": 19
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 17
+                            },
+                            {
+                                "weight": 1.2
+                            }
+                        ]
+                    }
+                ]
+            };
+
+
+
+            var mapElement = document.getElementById('map');
+            var image = {
+                url: "<%= image_url 'map-icon.png'%>",
+                scaledSize: new google.maps.Size(30,40),
+            }
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: results[0].geometry.location,
+                map: map,
+                optimized: false,
+                icon: image
+            });
+
+
+             
+
+
+        }
+
+
+
+    });
+
+
+
+}
+</script>
+<% end %>

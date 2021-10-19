@@ -1,0 +1,1 @@
+describe("noConflict",()=>{it("should be a static method",()=>{expect(Cropper.noConflict).to.be.a("function")}),it("should return the Cropper class itself",()=>{const{Cropper:e}=window,o=e.noConflict();expect(o).to.equal(e),expect(window.Cropper).to.be.undefined,window.Cropper=o})});

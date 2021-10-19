@@ -1,0 +1,28 @@
+<div class="navbar-custom">
+  <ul class="list-unstyled topbar-right-menu float-right mb-0">
+    <li class="dropdown notification-list">
+      <a class="nav-link dropdown-toggle arrow-none" href="<%=root_path%>" target="_blank">
+        <i class="dripicons-store noti-icon"></i> 回到前台
+      </a>
+    </li>
+    <li class="dropdown notification-list">
+      <a class="nav-link dropdown-toggle nav-user arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                aria-expanded="false">
+        <span class="account-user-avatar">
+          <%= image_tag "fav-icon.jpg", class: "rounded-circle" %>
+        </span>
+        <span>
+          <span class="account-user-name"><%= current_user.email%></span>
+          <span class="account-position"><%= current_user.role %></span>
+        </span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown ">
+        <%= link_to('變更密碼', edit_admin_password_path, class: 'dropdown-item notify-item') %>
+        <%= link_to('登出', destroy_user_session_path, method: :delete, class: 'dropdown-item notify-item') %>
+      </div>
+    </li>
+  </ul>
+  <button class="button-menu-mobile open-left disable-btn">
+    <i class="mdi mdi-menu"></i>
+  </button>
+</div>

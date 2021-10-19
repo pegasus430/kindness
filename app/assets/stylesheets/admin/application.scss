@@ -1,0 +1,22 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ *= require vendor/britecharts.min
+ *= require vendor/buttons.bootstrap4
+ *= require vendor/dataTables.bootstrap4
+ *= require vendor/jquery-jvectormap-1.2.2
+ *= require vendor/responsive.bootstrap4
+ *= require vendor/select.bootstrap4
+ *= require icons
+ *= require app
+ *= require cropperjs/dist/cropper.min
+ *= require_self
+
+
+*= require_tree ../admin
+*/
+
+/* 後台清單縮圖大小 */
+.img-thumbnail {
+	width:50px;
+	height:50px;
+}

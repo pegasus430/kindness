@@ -1,0 +1,71 @@
+<!--slider-->
+<section class="inside-page-banner">
+  <div class="light_Banner_container_table inside-banner">
+    <div class="light_Banner_container_table_cell">
+      <h2><%= t('traffics.title') %></h2>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="inside-banner-contain" style="background-image: url(<%= image_url 'traffic-list-page.jpg'%>);"></div>
+</section>
+<!--content-->
+<section id="section4" class="section4">
+  <div class="container traffic">
+    <h4><%= t('branch') %></h4>
+    <div class="traffic-tab">
+      <ul>
+        <% @regions.each_with_index do |region, index| %>
+          <li class="tab-li active">
+            <a href="<%=traffics_path(q:{ region_id_eq: region.id.to_i})%>"><%= region.title%></a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="traffic-city">
+      <% @stores.each_with_index do |store, index| %>
+        <div class="hotel_list">
+          <a href="<%= traffic_path(store)%>">
+            <div class="dark-overlay"></div>
+          </a>
+          <div class="hotel-pic" style="background-image: url(images/traffic-list1.png);"></div>
+          <div class="hotel-info">
+            <h3><a href="<%= traffic_path(store)%>"><%= store.title %></a></h3>
+            <p><a href="<%= traffic_path(store)%>"><%= store.address %></a></p>
+          </div>
+          <div class="traffic-more">
+            <div class="more-arrow_container-w">
+              <a class='wanimated-arrow' href='<%= traffic_path(store)%>'>
+                <span class='wthe-arrow -left'>
+                  <span class='shaft'></span>
+                </span>
+                <span class='main'>
+                  <span class='text'>
+                    MORE
+                  </span>
+                  <span class='wthe-arrow -right'>
+                    <span class='shaft'></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <!--more-arrow-->
+          </div>
+        </div>
+      <% end %>
+      <!--hotel-list-->
+      <!-- 
+      <div class="pagination">
+        <ul>
+          <li class="active"><a href="#" id="">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ul>
+      </div>
+       -->
+    </div>
+    <!--traffic city-->
+  </div>
+  <!--traffic container-->
+</section>
